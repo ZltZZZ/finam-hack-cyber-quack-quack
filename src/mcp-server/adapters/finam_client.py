@@ -4,6 +4,9 @@ import asyncio
 from datetime import datetime, timedelta
 import jwt
 from .models import *
+import logging
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 class FinamApiClient:
     """Клиент для работы с API Finam с автоматической аутентификацией."""
@@ -97,7 +100,7 @@ class FinamApiClient:
             for attempt in range(max_retries):
                 try:
                     async with httpx.AsyncClient() as client:
-                        print(f"🔍 Making request: {method} {url}")
+                        logging.info(f"MAKING REQUEST: {method} {url}")
                         print(f"🔍 Headers: { {k: v for k, v in headers.items() if k != 'Authorization'} }")
                         print(f"Args: {kwargs}")
                         

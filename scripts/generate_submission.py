@@ -1,261 +1,384 @@
 #!/usr/bin/env python3
 """
 Скрипт для генерации submission.csv на основе test.csv
-
-Использует LLM для преобразования вопросов на естественном языке
-в HTTP запросы к Finam TradeAPI.
-
-Использование:
-    python scripts/generate_submission.py [OPTIONS]
-
-Опции:
-    --test-file PATH      Путь к test.csv (по умолчанию: data/processed/test.csv)
-    --train-file PATH     Путь к train.csv (по умолчанию: data/processed/train.csv)
-    --output-file PATH    Путь к submission.csv (по умолчанию: data/processed/submission.csv)
-    --num-examples INT    Количество примеров для few-shot (по умолчанию: 10)
-    --batch-size INT      Размер батча для обработки (по умолчанию: 5)
+с мониторингом Docker контейнеров в реальном времени и перезагрузкой каждые 15 запросов.
 """
 
 import csv
-import random
+import asyncio
+import json
+import time
+import threading
 from pathlib import Path
+from typing import Dict, List, Any
+from datetime import datetime
+import re
 
 import click
-from tqdm import tqdm  # type: ignore[import-untyped]
+import httpx
+import docker
+from tqdm import tqdm
 
-from src.app.core.llm import call_llm
+# Глобальные переменные для хранения последнего запроса
+last_method = ""
+last_url = ""
+monitoring_active = True
+request_counter = 0
 
+def clean_url(url: str) -> str:
+    """Очищает URL от префикса https://api.finam.ru"""
+    if url.startswith("https://api.finam.ru"):
+        return url.replace("https://api.finam.ru", "")
+    return url
 
-def calculate_cost(usage: dict, model: str) -> float:
-    """Рассчитать стоимость запроса на основе usage и модели"""
-    # Цены OpenRouter (примерные, в $ за 1M токенов)
-    # Источник: https://openrouter.ai/models
-    pricing = {
-        "openai/gpt-4o-mini": {"prompt": 0.15, "completion": 0.60},
-        "openai/gpt-4o": {"prompt": 2.50, "completion": 10.00},
-        "openai/gpt-3.5-turbo": {"prompt": 0.50, "completion": 1.50},
-        "anthropic/claude-3-sonnet": {"prompt": 3.00, "completion": 15.00},
-        "anthropic/claude-3-haiku": {"prompt": 0.25, "completion": 1.25},
-    }
+class LogMonitor:
+    """Мониторинг логов контейнеров в реальном времени"""
+    
+    def __init__(self):
+        self.client = docker.from_env()
+        self.requests_log: List[Dict[str, Any]] = []
+        
+    def monitor_mcp_server_logs(self, container_name: str = "mcp-server2"):
+        """Мониторинг логов MCP сервера в отдельном потоке"""
+        global last_method, last_url, monitoring_active
+        
+        try:
+            container = self.client.containers.get(container_name)
+            print(f"🔍 Мониторинг логов контейнера: {container_name}")
+            
+            # Мониторинг в реальном времени
+            for line in container.logs(stream=True, follow=True):
+                if not monitoring_active:
+                    break
+                    
+                line = line.decode('utf-8').strip()
+                self._process_log_line(line)
+                
+        except docker.errors.NotFound:
+            print(f"❌ Контейнер {container_name} не найден")
+        except Exception as e:
+            print(f"❌ Ошибка мониторинга: {e}")
+            
+    def _process_log_line(self, line: str):
+        """Обработка строки лога"""
+        global last_method, last_url
+        
+        if "MAKING REQUEST:" in line:
+            print(f"📡 НАЙДЕН ЗАПРОС: {line}")
+            
+            # Извлекаем метод и URL
+            match = re.search(r"MAKING REQUEST: (\w+) (https?://[^\s]+)", line)
+            if match:
+                original_url = match.group(2)
+                cleaned_url = clean_url(original_url)
+                
+                request_data = {
+                    'timestamp': datetime.now().isoformat(),
+                    'method': match.group(1),
+                    'url': cleaned_url,
+                    'original_url': original_url,
+                    'full_log': line
+                }
+                self.requests_log.append(request_data)
+                
+                # Обновляем глобальные переменные
+                last_method = request_data['method']
+                last_url = request_data['url']  # Сохраняем очищенный URL
+                print(f"🎯 Метод: {last_method}, URL: {last_url}")
+    
+    def get_metrics(self) -> Dict[str, Any]:
+        """Получение собранных метрик"""
+        method_counts = {}
+        for req in self.requests_log:
+            method_counts[req['method']] = method_counts.get(req['method'], 0) + 1
+            
+        return {
+            'total_requests': len(self.requests_log),
+            'method_counts': method_counts,
+            'requests': self.requests_log
+        }
 
-    # Получаем цены для модели (по умолчанию как для gpt-4o-mini)
-    prices = pricing.get(model, {"prompt": 0.15, "completion": 0.60})
+class DockerManager:
+    """Управление Docker контейнеров"""
+    
+    def __init__(self):
+        self.client = docker.from_env()
+        
+    def start_containers(self):
+        """Запуск контейнеров через docker-compose"""
+        import subprocess
+        try:
+            # Пробуем разные варианты команды
+            commands = [
+                ["docker", "compose", "up", "-d"],
+                ["docker-compose", "up", "-d"]
+            ]
+            
+            for cmd in commands:
+                try:
+                    result = subprocess.run(
+                        cmd,
+                        cwd=Path(__file__).parent,
+                        capture_output=True,
+                        text=True,
+                        timeout=60
+                    )
+                    if result.returncode == 0:
+                        print("✅ Контейнеры успешно запущены")
+                        return True
+                except (FileNotFoundError, subprocess.TimeoutExpired):
+                    continue
+            
+            print("❌ Не удалось запустить контейнеры")
+            return False
+            
+        except Exception as e:
+            print(f"❌ Ошибка: {e}")
+            return False
+            
+    def stop_containers(self):
+        """Остановка контейнеров"""
+        import subprocess
+        try:
+            commands = [
+                ["docker", "compose", "down"],
+                ["docker-compose", "down"]
+            ]
+            
+            for cmd in commands:
+                try:
+                    subprocess.run(cmd, cwd=Path(__file__).parent, timeout=30)
+                    break
+                except FileNotFoundError:
+                    continue
+                    
+            print("✅ Контейнеры остановлены")
+        except Exception as e:
+            print(f"⚠️ Предупреждение при остановке: {e}")
+    
+    def restart_containers(self):
+        """Перезапуск контейнеров"""
+        print("🔄 Перезапуск контейнеров...")
+        self.stop_containers()
+        time.sleep(5)  # Пауза перед запуском
+        success = self.start_containers()
+        if success:
+            print("⏳ Ожидание запуска сервисов после перезагрузки (10 секунд)...")
+            time.sleep(10)
+        return success
 
-    prompt_tokens = usage.get("prompt_tokens", 0)
-    completion_tokens = usage.get("completion_tokens", 0)
+class AIClient:
+    """Клиент для взаимодействия с AI агентом"""
+    
+    def __init__(self, base_url: str = "http://localhost:8003"):
+        self.base_url = base_url
+        
+    async def ask_question(self, question: str, uid: str):
+        """Отправка вопроса AI агенту"""
+        try:
+            async with httpx.AsyncClient(timeout=30.0) as client:
+                response = await client.post(
+                    f"{self.base_url}/generate_str",
+                    json={"prompt": question}
+                )
+                print(f"📨 Ответ от AI агента для {uid}: {response.status_code}")
+        except Exception as e:
+            print(f"❌ Ошибка запроса к AI агенту: {e}")
 
-    # Считаем стоимость (цена за 1M токенов)
-    prompt_cost = (prompt_tokens / 1_000_000) * prices["prompt"]
-    completion_cost = (completion_tokens / 1_000_000) * prices["completion"]
+async def process_questions(
+    test_questions: List[Dict[str, str]],
+    output_file: Path,
+    docker_manager: DockerManager,
+    log_monitor: LogMonitor
+):
+    """Обработка вопросов с перезагрузкой контейнеров каждые 15 запросов"""
+    
+    global request_counter, monitoring_active
+    
+    ai_client = AIClient()
+    results = []
+    
+    # Обрабатываем вопросы с перезагрузкой каждые 15 запросов
+    for i, item in enumerate(tqdm(test_questions, desc="Обработка вопросов")):
+        try:
+            # Проверяем, не пора ли перезагрузить контейнеры
+            if i > 0 and i % 15 == 0:
+                print(f"\n🔄 Достигнуто {i} запросов, перезагружаем контейнеры...")
+                
+                # Останавливаем мониторинг
+                monitoring_active = False
+                time.sleep(2)
+                
+                # Перезагружаем контейнеры
+                if not docker_manager.restart_containers():
+                    print("❌ Не удалось перезагрузить контейнеры, продолжаем...")
+                
+                # Перезапускаем мониторинг
+                monitoring_active = True
+                monitoring_thread = start_log_monitoring(log_monitor)
+                time.sleep(3)
+                
+                print("✅ Контейнеры перезагружены, продолжаем обработку...")
+            
+            # Отправляем вопрос AI агенту
+            await ai_client.ask_question(
+                question=item["question"],
+                uid=item["uid"]
+            )
+            
+            # Увеличиваем счетчик запросов
+            request_counter += 1
+            
+            # Используем последние зафиксированные метод и URL (уже очищенный)
+            current_method = last_method if last_method else "GET"
+            current_url = last_url if last_url else ""
+            
+            results.append({
+                "uid": item["uid"],
+                "type": current_method,
+                "request": current_url
+            })
+            
+            print(f"✅ Обработан вопрос {item['uid']} ({i+1}/{len(test_questions)}): {current_method} {current_url}")
+            
+            # Небольшая пауза между запросами
+            await asyncio.sleep(1)
+            
+        except Exception as e:
+            print(f"❌ Ошибка обработки вопроса {item['uid']}: {e}")
+            results.append({
+                "uid": item["uid"],
+                "type": "error",
+                "request": ""
+            })
+    
+    return results
 
-    return prompt_cost + completion_cost
-
-
-def load_train_examples(train_file: Path, num_examples: int = 10) -> list[dict[str, str]]:
-    """Загрузить примеры из train.csv для few-shot learning"""
-    examples = []
-    with open(train_file, encoding="utf-8") as f:
-        reader = csv.DictReader(f, delimiter=";")
-        for row in reader:
-            examples.append({"question": row["question"], "type": row["type"], "request": row["request"]})
-
-    # Берем разнообразные примеры (GET, POST, DELETE)
-    get_examples = [e for e in examples if e["type"] == "GET"]
-    post_examples = [e for e in examples if e["type"] == "POST"]
-    delete_examples = [e for e in examples if e["type"] == "DELETE"]
-
-    # Формируем сбалансированный набор
-    selected = []
-    selected.extend(random.sample(get_examples, min(num_examples - 3, len(get_examples))))
-    selected.extend(random.sample(post_examples, min(2, len(post_examples))))
-    selected.extend(random.sample(delete_examples, min(1, len(delete_examples))))
-
-    return selected[:num_examples]
-
-
-def create_prompt(question: str, examples: list[dict[str, str]]) -> str:
-    """Создать промпт для LLM с few-shot примерами"""
-    prompt = """Ты - эксперт по Finam TradeAPI. Твоя задача - преобразовать вопрос на русском языке в HTTP запрос к API.
-
-API Documentation:
-- GET /v1/exchanges - список бирж
-- GET /v1/assets - поиск инструментов
-- GET /v1/assets/{symbol} - информация об инструменте
-- GET /v1/assets/{symbol}/params - параметры инструмента для счета
-- GET /v1/assets/{symbol}/schedule - расписание торгов
-- GET /v1/assets/{symbol}/options - опционы на базовый актив
-- GET /v1/instruments/{symbol}/quotes/latest - последняя котировка
-- GET /v1/instruments/{symbol}/orderbook - биржевой стакан
-- GET /v1/instruments/{symbol}/trades/latest - лента сделок
-- GET /v1/instruments/{symbol}/bars - исторические свечи
-  (параметры: timeframe, interval.start_time, interval.end_time)
-- GET /v1/accounts/{account_id} - информация о счете
-- GET /v1/accounts/{account_id}/orders - список ордеров
-- GET /v1/accounts/{account_id}/orders/{order_id} - информация об ордере
-- GET /v1/accounts/{account_id}/trades - история сделок
-- GET /v1/accounts/{account_id}/transactions - транзакции по счету
-- POST /v1/sessions - создание новой сессии
-- POST /v1/sessions/details - детали текущей сессии
-- POST /v1/accounts/{account_id}/orders - создание ордера
-- DELETE /v1/accounts/{account_id}/orders/{order_id} - отмена ордера
-
-Timeframes: TIME_FRAME_M1, TIME_FRAME_M5, TIME_FRAME_M15, TIME_FRAME_M30,
-TIME_FRAME_H1, TIME_FRAME_H4, TIME_FRAME_D, TIME_FRAME_W, TIME_FRAME_MN
-
-Примеры:
-
-"""
-
-    for ex in examples:
-        prompt += f'Вопрос: "{ex["question"]}"\n'
-        prompt += f"Ответ: {ex['type']} {ex['request']}\n\n"
-
-    prompt += f'Вопрос: "{question}"\n'
-    prompt += "Ответ (только HTTP метод и путь, без объяснений):"
-
-    return prompt
-
-
-def parse_llm_response(response: str) -> tuple[str, str]:
-    """Парсинг ответа LLM в (type, request)"""
-    response = response.strip()
-
-    # Ищем HTTP метод в начале
-    methods = ["GET", "POST", "DELETE", "PUT", "PATCH"]
-    method = "GET"  # по умолчанию
-    request = response
-
-    for m in methods:
-        if response.upper().startswith(m):
-            method = m
-            request = response[len(m) :].strip()
-            break
-
-    # Убираем лишние символы
-    request = request.strip()
-    if not request.startswith("/"):
-        # Если LLM вернул что-то странное, пытаемся найти путь
-        parts = request.split()
-        for part in parts:
-            if part.startswith("/"):
-                request = part
-                break
-
-    # Fallback на безопасный вариант
-    if not request.startswith("/"):
-        request = "/v1/assets"
-
-    return method, request
-
-
-def generate_api_call(question: str, examples: list[dict[str, str]], model: str) -> tuple[dict[str, str], float]:
-    """Сгенерировать API запрос для вопроса
-
-    Returns:
-        tuple: (result_dict, cost_in_dollars)
-    """
-    prompt = create_prompt(question, examples)
-
-    messages = [{"role": "user", "content": prompt}]
-
-    try:
-        response = call_llm(messages, temperature=0.0, max_tokens=200)
-        llm_answer = response["choices"][0]["message"]["content"].strip()
-
-        method, request = parse_llm_response(llm_answer)
-
-        # Рассчитываем стоимость
-        usage = response.get("usage", {})
-        cost = calculate_cost(usage, model)
-
-        return {"type": method, "request": request}, cost
-
-    except Exception as e:
-        click.echo(f"⚠️  Ошибка при генерации для вопроса '{question[:50]}...': {e}", err=True)
-        # Возвращаем fallback
-        return {"type": "GET", "request": "/v1/assets"}, 0.0
-
+def start_log_monitoring(log_monitor: LogMonitor):
+    """Запуск мониторинга логов в отдельном потоке"""
+    def monitoring_thread():
+        log_monitor.monitor_mcp_server_logs()
+    
+    thread = threading.Thread(target=monitoring_thread, daemon=True)
+    thread.start()
+    return thread
 
 @click.command()
 @click.option(
     "--test-file",
     type=click.Path(exists=True, path_type=Path),
-    default="data/processed/test.csv",
+    default="../data/processed/test.csv",
     help="Путь к test.csv",
 )
 @click.option(
-    "--train-file",
-    type=click.Path(exists=True, path_type=Path),
-    default="data/processed/train.csv",
-    help="Путь к train.csv",
-)
-@click.option(
-    "--output-file",
+    "--output-file", 
     type=click.Path(path_type=Path),
-    default="data/processed/submission.csv",
+    default="submission.csv",
     help="Путь к submission.csv",
 )
-@click.option("--num-examples", type=int, default=10, help="Количество примеров для few-shot")
-def main(test_file: Path, train_file: Path, output_file: Path, num_examples: int) -> None:
-    """Генерация submission.csv для хакатона"""
-    from src.app.core.config import get_settings
-
-    click.echo("🚀 Генерация submission файла...")
-    click.echo(f"📖 Загрузка примеров из {train_file}...")
-
-    # Получаем настройки для определения модели
-    settings = get_settings()
-    model = settings.openrouter_model
-
-    # Загружаем примеры для few-shot
-    examples = load_train_examples(train_file, num_examples)
-    click.echo(f"✅ Загружено {len(examples)} примеров для few-shot learning")
-    click.echo(f"🤖 Используется модель: {model}")
-
-    # Читаем тестовый набор
-    click.echo(f"📖 Чтение {test_file}...")
-    test_questions = []
-    with open(test_file, encoding="utf-8") as f:
-        reader = csv.DictReader(f, delimiter=";")
-        for row in reader:
-            test_questions.append({"uid": row["uid"], "question": row["question"]})
-
-    click.echo(f"✅ Найдено {len(test_questions)} вопросов для обработки")
-
-    # Генерируем ответы
-    click.echo("\n🤖 Генерация API запросов с помощью LLM...")
-    results = []
-    total_cost = 0.0
-
-    # Используем tqdm с postfix для отображения стоимости
-    progress_bar = tqdm(test_questions, desc="Обработка")
-    for item in progress_bar:
-        api_call, cost = generate_api_call(item["question"], examples, model)
-        total_cost += cost
-        results.append({"uid": item["uid"], "type": api_call["type"], "request": api_call["request"]})
-
-        # Обновляем postfix с текущей стоимостью
-        progress_bar.set_postfix({"cost": f"${total_cost:.4f}"})
-
-    # Записываем в submission.csv
-    click.echo(f"\n💾 Сохранение результатов в {output_file}...")
-    output_file.parent.mkdir(parents=True, exist_ok=True)
-
-    with open(output_file, "w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=["uid", "type", "request"], delimiter=";")
-        writer.writeheader()
-        writer.writerows(results)
-
-    click.echo(f"✅ Готово! Создано {len(results)} записей в {output_file}")
-    click.echo(f"\n💰 Общая стоимость генерации: ${total_cost:.4f}")
-    click.echo(f"   Средняя стоимость на запрос: ${total_cost / len(results):.6f}")
-    click.echo("\n📊 Статистика по типам запросов:")
-    type_counts: dict[str, int] = {}
-    for r in results:
-        type_counts[r["type"]] = type_counts.get(r["type"], 0) + 1
-    for method, count in sorted(type_counts.items()):
-        click.echo(f"  {method}: {count}")
-
+@click.option(
+    "--keep-containers",
+    is_flag=True,
+    help="Не останавливать контейнеры после завершения",
+)
+@click.option(
+    "--restart-interval",
+    type=int,
+    default=15,
+    help="Количество запросов между перезагрузками контейнеров",
+)
+def main(test_file: Path, output_file: Path, keep_containers: bool, restart_interval: int) -> None:
+    """Генерация submission.csv с мониторингом Docker контейнеров и перезагрузкой"""
+    global monitoring_active
+    
+    # Инициализация менеджеров
+    docker_manager = DockerManager()
+    log_monitor = LogMonitor()
+    
+    try:
+        # Запуск контейнеров
+        click.echo("🚀 Запуск Docker контейнеров...")
+        if not docker_manager.start_containers():
+            click.echo("❌ Не удалось запустить контейнеры")
+            return
+            
+        # Ждем запуска сервисов
+        click.echo("⏳ Ожидание запуска сервисов (15 секунд)...")
+        time.sleep(15)
+        
+        # Запуск мониторинга логов в отдельном потоке
+        click.echo("🔍 Запуск мониторинга логов...")
+        monitoring_thread = start_log_monitoring(log_monitor)
+        
+        # Даем время на запуск мониторинга
+        time.sleep(3)
+        
+        # Чтение тестовых вопросов
+        click.echo(f"📖 Чтение {test_file}...")
+        test_questions = []
+        try:
+            with open(test_file, encoding="utf-8") as f:
+                reader = csv.DictReader(f, delimiter=";")
+                for row in reader:
+                    test_questions.append({
+                        "uid": row["uid"], 
+                        "question": row["question"]
+                    })
+            click.echo(f"✅ Найдено {len(test_questions)} вопросов")
+        except Exception as e:
+            click.echo(f"❌ Ошибка чтения файла: {e}")
+            return
+        
+        # Обработка вопросов с перезагрузкой
+        click.echo(f"\n🤖 Запуск обработки вопросов с перезагрузкой каждые {restart_interval} запросов...")
+        
+        results = asyncio.run(process_questions(test_questions, output_file, docker_manager, log_monitor))
+        
+        # Сохранение результатов
+        click.echo(f"💾 Сохранение результатов в {output_file}...")
+        output_file.parent.mkdir(parents=True, exist_ok=True)
+        
+        with open(output_file, "w", encoding="utf-8", newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=["uid", "type", "request"], delimiter=";")
+            writer.writeheader()
+            writer.writerows(results)
+        
+        # Вывод метрик
+        metrics = log_monitor.get_metrics()
+        click.echo(f"\n📊 Собранные метрики API вызовов:")
+        click.echo(f"   Всего запросов: {metrics['total_requests']}")
+        for method, count in metrics['method_counts'].items():
+            click.echo(f"   {method}: {count}")
+        
+        # Статистика по типам ответов
+        type_counts = {}
+        for r in results:
+            type_counts[r["type"]] = type_counts.get(r["type"], 0) + 1
+        
+        click.echo(f"\n📈 Статистика по типам ответов:")
+        for method, count in sorted(type_counts.items()):
+            click.echo(f"   {method}: {count}")
+            
+        # Сохранение детальных метрик
+        metrics_file = output_file.parent / "api_metrics.json"
+        with open(metrics_file, "w", encoding="utf-8") as f:
+            json.dump(metrics, f, indent=2, ensure_ascii=False)
+        click.echo(f"📄 Детальные метрики сохранены в {metrics_file}")
+        
+        click.echo(f"✅ Готово! Создано {len(results)} записей в {output_file}")
+        
+    except KeyboardInterrupt:
+        click.echo("\n🛑 Прерывание пользователем")
+    except Exception as e:
+        click.echo(f"❌ Критическая ошибка: {e}")
+    finally:
+        # Остановка мониторинга
+        monitoring_active = False
+        
+        # Остановка контейнеров если не указано иное
+        if not keep_containers:
+            click.echo("\n🛑 Остановка контейнеров...")
+            docker_manager.stop_containers()
 
 if __name__ == "__main__":
     main()
