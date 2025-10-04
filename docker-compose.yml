@@ -35,6 +35,11 @@ services:
     networks:
       - finam-network
 
+  mcp-server:
+    container_name: mcp-server
+    build: ./src/mcp-server
+    restart: always
+
 networks:
   finam-network:
     driver: bridge

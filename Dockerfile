@@ -19,7 +19,7 @@ RUN pip install --no-cache-dir poetry==1.8.3 && \
     rm -rf ~/.cache/pypoetry
 
 # Копируем исходный код приложения
-COPY src/ ./src/
+COPY src/app ./src/app
 COPY scripts/ ./scripts/
 COPY data/ ./data/
 COPY README.md .

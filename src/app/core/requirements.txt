@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+#google-generativeai
+#google-genai
+mcp-agent
+pydantic
+python-dotenv
+python-json-logger
