@@ -1,0 +1,2508 @@
+{
+  "total_requests": 357,
+  "method_counts": {
+    "GET": 326,
+    "POST": 31
+  },
+  "requests": [
+    {
+      "timestamp": "2025-10-04T19:26:44.037581",
+      "method": "GET",
+      "url": "/v1/instruments/RIZ5@RTSX/orderbook",
+      "original_url": "https://api.finam.ru/v1/instruments/RIZ5@RTSX/orderbook",
+      "full_log": "2025-10-04 16:26:44,037 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/RIZ5@RTSX/orderbook"
+    },
+    {
+      "timestamp": "2025-10-04T19:26:55.432828",
+      "method": "GET",
+      "url": "/v1/instruments/ROSN@RTS/quotes/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/ROSN@RTS/quotes/latest",
+      "full_log": "2025-10-04 16:26:55,432 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/ROSN@RTS/quotes/latest"
+    },
+    {
+      "timestamp": "2025-10-04T19:26:58.292305",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:26:58,291 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:27:01.981781",
+      "method": "GET",
+      "url": "/v1/instruments/ROSN@MISX/quotes/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/ROSN@MISX/quotes/latest",
+      "full_log": "2025-10-04 16:27:01,981 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/ROSN@MISX/quotes/latest"
+    },
+    {
+      "timestamp": "2025-10-04T19:27:13.185781",
+      "method": "GET",
+      "url": "/v1/accounts/ORDERR01/orders",
+      "original_url": "https://api.finam.ru/v1/accounts/ORDERR01/orders",
+      "full_log": "2025-10-04 16:27:13,185 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/ORDERR01/orders"
+    },
+    {
+      "timestamp": "2025-10-04T19:27:19.693483",
+      "method": "GET",
+      "url": "/v1/instruments/ROSN@MISX/orderbook",
+      "original_url": "https://api.finam.ru/v1/instruments/ROSN@MISX/orderbook",
+      "full_log": "2025-10-04 16:27:19,692 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/ROSN@MISX/orderbook"
+    },
+    {
+      "timestamp": "2025-10-04T19:27:27.131797",
+      "method": "GET",
+      "url": "/v1/instruments/SiZ5@RTSX/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/SiZ5@RTSX/bars",
+      "full_log": "2025-10-04 16:27:27,131 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/SiZ5@RTSX/bars"
+    },
+    {
+      "timestamp": "2025-10-04T19:27:33.475969",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:27:33,475 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:27:40.845029",
+      "method": "GET",
+      "url": "/v1/assets/LKOH@MISX/options",
+      "original_url": "https://api.finam.ru/v1/assets/LKOH@MISX/options",
+      "full_log": "2025-10-04 16:27:40,844 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/LKOH@MISX/options"
+    },
+    {
+      "timestamp": "2025-10-04T19:27:52.713683",
+      "method": "GET",
+      "url": "/v1/instruments/LKOH@MISX/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/LKOH@MISX/bars",
+      "full_log": "2025-10-04 16:27:52,713 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/LKOH@MISX/bars"
+    },
+    {
+      "timestamp": "2025-10-04T19:28:18.463628",
+      "method": "GET",
+      "url": "/v1/accounts/ORDERR01/orders",
+      "original_url": "https://api.finam.ru/v1/accounts/ORDERR01/orders",
+      "full_log": "2025-10-04 16:28:18,463 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/ORDERR01/orders"
+    },
+    {
+      "timestamp": "2025-10-04T19:28:32.819551",
+      "method": "GET",
+      "url": "/v1/accounts/ORDERR01/orders/ORD098765",
+      "original_url": "https://api.finam.ru/v1/accounts/ORDERR01/orders/ORD098765",
+      "full_log": "2025-10-04 16:28:32,819 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/ORDERR01/orders/ORD098765"
+    },
+    {
+      "timestamp": "2025-10-04T19:28:40.956169",
+      "method": "GET",
+      "url": "/v1/instruments/AAPL@XNGS/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/AAPL@XNGS/bars",
+      "full_log": "2025-10-04 16:28:40,955 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/AAPL@XNGS/bars"
+    },
+    {
+      "timestamp": "2025-10-04T19:28:41.981908",
+      "method": "GET",
+      "url": "/v1/instruments/AAPL@XNGS/quotes/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/AAPL@XNGS/quotes/latest",
+      "full_log": "2025-10-04 16:28:41,981 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/AAPL@XNGS/quotes/latest"
+    },
+    {
+      "timestamp": "2025-10-04T19:28:48.131801",
+      "method": "GET",
+      "url": "/v1/accounts/ORDERR01/transactions",
+      "original_url": "https://api.finam.ru/v1/accounts/ORDERR01/transactions",
+      "full_log": "2025-10-04 16:28:48,131 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/ORDERR01/transactions"
+    },
+    {
+      "timestamp": "2025-10-04T19:28:54.540258",
+      "method": "GET",
+      "url": "/v1/accounts/ACC-001-A",
+      "original_url": "https://api.finam.ru/v1/accounts/ACC-001-A",
+      "full_log": "2025-10-04 16:28:54,539 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/ACC-001-A"
+    },
+    {
+      "timestamp": "2025-10-04T19:29:24.022665",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 16:29:24,022 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T19:29:30.259535",
+      "method": "GET",
+      "url": "/v1/assets/RTS/schedule",
+      "original_url": "https://api.finam.ru/v1/assets/RTS/schedule",
+      "full_log": "2025-10-04 16:29:30,259 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/RTS/schedule"
+    },
+    {
+      "timestamp": "2025-10-04T19:29:32.820285",
+      "method": "GET",
+      "url": "/v1/exchanges",
+      "original_url": "https://api.finam.ru/v1/exchanges",
+      "full_log": "2025-10-04 16:29:32,819 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/exchanges"
+    },
+    {
+      "timestamp": "2025-10-04T19:29:46.739232",
+      "method": "GET",
+      "url": "/v1/assets/clock",
+      "original_url": "https://api.finam.ru/v1/assets/clock",
+      "full_log": "2025-10-04 16:29:46,738 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/clock"
+    },
+    {
+      "timestamp": "2025-10-04T19:29:50.286074",
+      "method": "GET",
+      "url": "/v1/instruments/SBER@MISX/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/SBER@MISX/bars",
+      "full_log": "2025-10-04 16:29:50,285 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/SBER@MISX/bars"
+    },
+    {
+      "timestamp": "2025-10-04T19:30:16.190025",
+      "method": "GET",
+      "url": "/v1/instruments/GAZP@MISX/trades/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/GAZP@MISX/trades/latest",
+      "full_log": "2025-10-04 16:30:16,188 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/GAZP@MISX/trades/latest"
+    },
+    {
+      "timestamp": "2025-10-04T19:30:53.588396",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:30:53,588 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:31:58.709307",
+      "method": "GET",
+      "url": "/v1/assets/TATN@MOEX/params",
+      "original_url": "https://api.finam.ru/v1/assets/TATN@MOEX/params",
+      "full_log": "2025-10-04 16:31:58,708 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/TATN@MOEX/params"
+    },
+    {
+      "timestamp": "2025-10-04T19:32:01.812213",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 16:32:01,811 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T19:32:04.631188",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979",
+      "full_log": "2025-10-04 16:32:04,630 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979"
+    },
+    {
+      "timestamp": "2025-10-04T19:32:07.336921",
+      "method": "GET",
+      "url": "/v1/assets/TATN@MOEX/params",
+      "original_url": "https://api.finam.ru/v1/assets/TATN@MOEX/params",
+      "full_log": "2025-10-04 16:32:07,336 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/TATN@MOEX/params"
+    },
+    {
+      "timestamp": "2025-10-04T19:32:13.271485",
+      "method": "GET",
+      "url": "/v1/assets/ALRS@MOEX/params",
+      "original_url": "https://api.finam.ru/v1/assets/ALRS@MOEX/params",
+      "full_log": "2025-10-04 16:32:13,271 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/ALRS@MOEX/params"
+    },
+    {
+      "timestamp": "2025-10-04T19:32:19.773698",
+      "method": "GET",
+      "url": "/v1/accounts/A12345/trades",
+      "original_url": "https://api.finam.ru/v1/accounts/A12345/trades",
+      "full_log": "2025-10-04 16:32:19,772 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/A12345/trades"
+    },
+    {
+      "timestamp": "2025-10-04T19:32:33.549597",
+      "method": "GET",
+      "url": "/v1/instruments/SiZ5@RTSX/trades/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/SiZ5@RTSX/trades/latest",
+      "full_log": "2025-10-04 16:32:33,549 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/SiZ5@RTSX/trades/latest"
+    },
+    {
+      "timestamp": "2025-10-04T19:33:04.535304",
+      "method": "GET",
+      "url": "/v1/instruments/ROSN@MOEX/orderbook",
+      "original_url": "https://api.finam.ru/v1/instruments/ROSN@MOEX/orderbook",
+      "full_log": "2025-10-04 16:33:04,533 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/ROSN@MOEX/orderbook"
+    },
+    {
+      "timestamp": "2025-10-04T19:33:12.806868",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:33:12,806 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:33:21.192192",
+      "method": "GET",
+      "url": "/v1/instruments/ROSN@MISX/orderbook",
+      "original_url": "https://api.finam.ru/v1/instruments/ROSN@MISX/orderbook",
+      "full_log": "2025-10-04 16:33:21,191 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/ROSN@MISX/orderbook"
+    },
+    {
+      "timestamp": "2025-10-04T19:33:33.948891",
+      "method": "GET",
+      "url": "/v1/assets/SNGS@MOEX/options",
+      "original_url": "https://api.finam.ru/v1/assets/SNGS@MOEX/options",
+      "full_log": "2025-10-04 16:33:33,948 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/SNGS@MOEX/options"
+    },
+    {
+      "timestamp": "2025-10-04T19:33:41.367929",
+      "method": "GET",
+      "url": "/v1/assets/LKOH@MOEX/options",
+      "original_url": "https://api.finam.ru/v1/assets/LKOH@MOEX/options",
+      "full_log": "2025-10-04 16:33:41,367 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/LKOH@MOEX/options"
+    },
+    {
+      "timestamp": "2025-10-04T19:33:50.195947",
+      "method": "GET",
+      "url": "/v1/accounts/FIN-203-B/transactions",
+      "original_url": "https://api.finam.ru/v1/accounts/FIN-203-B/transactions",
+      "full_log": "2025-10-04 16:33:50,195 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/FIN-203-B/transactions"
+    },
+    {
+      "timestamp": "2025-10-04T19:33:55.484366",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 16:33:55,483 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T19:34:05.860760",
+      "method": "GET",
+      "url": "/v1/accounts/FIN-203-B/trades",
+      "original_url": "https://api.finam.ru/v1/accounts/FIN-203-B/trades",
+      "full_log": "2025-10-04 16:34:05,860 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/FIN-203-B/trades"
+    },
+    {
+      "timestamp": "2025-10-04T19:34:15.508545",
+      "method": "GET",
+      "url": "/v1/assets/RUAL@MOEX/schedule",
+      "original_url": "https://api.finam.ru/v1/assets/RUAL@MOEX/schedule",
+      "full_log": "2025-10-04 16:34:15,508 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/RUAL@MOEX/schedule"
+    },
+    {
+      "timestamp": "2025-10-04T19:34:19.680844",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:34:19,680 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:34:24.062348",
+      "method": "GET",
+      "url": "/v1/assets/RUAL@MISX/schedule",
+      "original_url": "https://api.finam.ru/v1/assets/RUAL@MISX/schedule",
+      "full_log": "2025-10-04 16:34:24,061 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/RUAL@MISX/schedule"
+    },
+    {
+      "timestamp": "2025-10-04T19:34:56.298655",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:34:56,298 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:35:27.281482",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 16:35:27,281 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T19:35:30.592832",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979",
+      "full_log": "2025-10-04 16:35:30,592 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979"
+    },
+    {
+      "timestamp": "2025-10-04T19:35:36.182325",
+      "method": "GET",
+      "url": "/v1/assets/MSFT@XNGS/params",
+      "original_url": "https://api.finam.ru/v1/assets/MSFT@XNGS/params",
+      "full_log": "2025-10-04 16:35:36,182 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/MSFT@XNGS/params"
+    },
+    {
+      "timestamp": "2025-10-04T19:35:42.726713",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/trades",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/trades",
+      "full_log": "2025-10-04 16:35:42,726 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/trades"
+    },
+    {
+      "timestamp": "2025-10-04T19:35:48.960491",
+      "method": "GET",
+      "url": "/v1/assets/AMZN@XNAS/params",
+      "original_url": "https://api.finam.ru/v1/assets/AMZN@XNAS/params",
+      "full_log": "2025-10-04 16:35:48,960 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/AMZN@XNAS/params"
+    },
+    {
+      "timestamp": "2025-10-04T19:35:55.422280",
+      "method": "GET",
+      "url": "/v1/instruments/RI@RTS/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/RI@RTS/bars",
+      "full_log": "2025-10-04 16:35:55,421 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/RI@RTS/bars"
+    },
+    {
+      "timestamp": "2025-10-04T19:36:00.828614",
+      "method": "GET",
+      "url": "/v1/instruments/VTBR@MISX/trades/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/VTBR@MISX/trades/latest",
+      "full_log": "2025-10-04 16:36:00,828 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/VTBR@MISX/trades/latest"
+    },
+    {
+      "timestamp": "2025-10-04T19:36:19.220661",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979",
+      "full_log": "2025-10-04 16:36:19,220 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979"
+    },
+    {
+      "timestamp": "2025-10-04T19:36:30.432614",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/trades",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/trades",
+      "full_log": "2025-10-04 16:36:30,432 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/trades"
+    },
+    {
+      "timestamp": "2025-10-04T19:36:37.731327",
+      "method": "GET",
+      "url": "/v1/instruments/USD_RUB_TOM@MOEX/quotes/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/USD_RUB_TOM@MOEX/quotes/latest",
+      "full_log": "2025-10-04 16:36:37,730 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/USD_RUB_TOM@MOEX/quotes/latest"
+    },
+    {
+      "timestamp": "2025-10-04T19:36:46.928213",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:36:46,927 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:36:54.303908",
+      "method": "GET",
+      "url": "/v1/instruments/USDRUB@_NPRO/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/USDRUB@_NPRO/bars",
+      "full_log": "2025-10-04 16:36:54,303 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/USDRUB@_NPRO/bars"
+    },
+    {
+      "timestamp": "2025-10-04T19:36:55.303274",
+      "method": "GET",
+      "url": "/v1/instruments/USDRUB@_NPRO/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/USDRUB@_NPRO/bars",
+      "full_log": "2025-10-04 16:36:55,302 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/USDRUB@_NPRO/bars"
+    },
+    {
+      "timestamp": "2025-10-04T19:37:15.977420",
+      "method": "GET",
+      "url": "/v1/instruments/GAZP@MISX/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/GAZP@MISX/bars",
+      "full_log": "2025-10-04 16:37:15,977 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/GAZP@MISX/bars"
+    },
+    {
+      "timestamp": "2025-10-04T19:37:24.452530",
+      "method": "GET",
+      "url": "/v1/accounts/FIN-203-B",
+      "original_url": "https://api.finam.ru/v1/accounts/FIN-203-B",
+      "full_log": "2025-10-04 16:37:24,452 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/FIN-203-B"
+    },
+    {
+      "timestamp": "2025-10-04T19:37:35.359701",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979",
+      "full_log": "2025-10-04 16:37:35,359 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979"
+    },
+    {
+      "timestamp": "2025-10-04T19:37:50.047574",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/orders/ORD667788",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/orders/ORD667788",
+      "full_log": "2025-10-04 16:37:50,047 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/orders/ORD667788"
+    },
+    {
+      "timestamp": "2025-10-04T19:37:59.934745",
+      "method": "GET",
+      "url": "/v1/assets/LKOH@MISX/",
+      "original_url": "https://api.finam.ru/v1/assets/LKOH@MISX/",
+      "full_log": "2025-10-04 16:37:59,934 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/LKOH@MISX/"
+    },
+    {
+      "timestamp": "2025-10-04T19:38:03.673264",
+      "method": "GET",
+      "url": "/v1/instruments/LKOH@MISX/quotes/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/LKOH@MISX/quotes/latest",
+      "full_log": "2025-10-04 16:38:03,672 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/LKOH@MISX/quotes/latest"
+    },
+    {
+      "timestamp": "2025-10-04T19:38:13.469387",
+      "method": "GET",
+      "url": "/v1/assets/ROSN@MISX/",
+      "original_url": "https://api.finam.ru/v1/assets/ROSN@MISX/",
+      "full_log": "2025-10-04 16:38:13,469 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/ROSN@MISX/"
+    },
+    {
+      "timestamp": "2025-10-04T19:38:42.736943",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 16:38:42,736 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T19:38:59.555630",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979",
+      "full_log": "2025-10-04 16:38:59,555 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979"
+    },
+    {
+      "timestamp": "2025-10-04T19:39:02.625649",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/orders",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/orders",
+      "full_log": "2025-10-04 16:39:02,625 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/orders"
+    },
+    {
+      "timestamp": "2025-10-04T19:39:25.166607",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:39:25,166 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:39:33.332437",
+      "method": "GET",
+      "url": "/v1/instruments/SNGS@MISX/trades/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/SNGS@MISX/trades/latest",
+      "full_log": "2025-10-04 16:39:33,331 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/SNGS@MISX/trades/latest"
+    },
+    {
+      "timestamp": "2025-10-04T19:39:56.110972",
+      "method": "GET",
+      "url": "/v1/accounts/FIN-203-B",
+      "original_url": "https://api.finam.ru/v1/accounts/FIN-203-B",
+      "full_log": "2025-10-04 16:39:56,110 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/FIN-203-B"
+    },
+    {
+      "timestamp": "2025-10-04T19:40:14.069762",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/transactions",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/transactions",
+      "full_log": "2025-10-04 16:40:14,069 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/transactions"
+    },
+    {
+      "timestamp": "2025-10-04T19:40:22.335362",
+      "method": "GET",
+      "url": "/v1/exchanges",
+      "original_url": "https://api.finam.ru/v1/exchanges",
+      "full_log": "2025-10-04 16:40:22,335 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/exchanges"
+    },
+    {
+      "timestamp": "2025-10-04T19:40:36.708372",
+      "method": "GET",
+      "url": "/v1/accounts/FIN-203-B",
+      "original_url": "https://api.finam.ru/v1/accounts/FIN-203-B",
+      "full_log": "2025-10-04 16:40:36,708 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/FIN-203-B"
+    },
+    {
+      "timestamp": "2025-10-04T19:40:42.078705",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979",
+      "full_log": "2025-10-04 16:40:42,078 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979"
+    },
+    {
+      "timestamp": "2025-10-04T19:40:51.572721",
+      "method": "GET",
+      "url": "/v1/instruments/SiZ5@RTSX/orderbook",
+      "original_url": "https://api.finam.ru/v1/instruments/SiZ5@RTSX/orderbook",
+      "full_log": "2025-10-04 16:40:51,572 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/SiZ5@RTSX/orderbook"
+    },
+    {
+      "timestamp": "2025-10-04T19:41:16.772893",
+      "method": "GET",
+      "url": "/v1/instruments/ROSN@MISX/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/ROSN@MISX/bars",
+      "full_log": "2025-10-04 16:41:16,772 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/ROSN@MISX/bars"
+    },
+    {
+      "timestamp": "2025-10-04T19:41:49.587424",
+      "method": "GET",
+      "url": "/v1/instruments/ROSN@MISX/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/ROSN@MISX/bars",
+      "full_log": "2025-10-04 16:41:49,586 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/ROSN@MISX/bars"
+    },
+    {
+      "timestamp": "2025-10-04T19:42:30.873377",
+      "method": "GET",
+      "url": "/v1/accounts/ACC-001-A/transactions",
+      "original_url": "https://api.finam.ru/v1/accounts/ACC-001-A/transactions",
+      "full_log": "2025-10-04 16:42:30,873 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/ACC-001-A/transactions"
+    },
+    {
+      "timestamp": "2025-10-04T19:42:33.417701",
+      "method": "GET",
+      "url": "/v1/accounts/ACC-001-A",
+      "original_url": "https://api.finam.ru/v1/accounts/ACC-001-A",
+      "full_log": "2025-10-04 16:42:33,417 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/ACC-001-A"
+    },
+    {
+      "timestamp": "2025-10-04T19:42:40.019966",
+      "method": "GET",
+      "url": "/v1/accounts/FIN-203-B/trades",
+      "original_url": "https://api.finam.ru/v1/accounts/FIN-203-B/trades",
+      "full_log": "2025-10-04 16:42:40,019 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/FIN-203-B/trades"
+    },
+    {
+      "timestamp": "2025-10-04T19:42:42.823496",
+      "method": "GET",
+      "url": "/v1/accounts/FIN-203-B",
+      "original_url": "https://api.finam.ru/v1/accounts/FIN-203-B",
+      "full_log": "2025-10-04 16:42:42,823 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/FIN-203-B"
+    },
+    {
+      "timestamp": "2025-10-04T19:42:51.793810",
+      "method": "GET",
+      "url": "/v1/exchanges",
+      "original_url": "https://api.finam.ru/v1/exchanges",
+      "full_log": "2025-10-04 16:42:51,793 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/exchanges"
+    },
+    {
+      "timestamp": "2025-10-04T19:43:01.093137",
+      "method": "GET",
+      "url": "/v1/assets/MSFT@XNYS/schedule",
+      "original_url": "https://api.finam.ru/v1/assets/MSFT@XNYS/schedule",
+      "full_log": "2025-10-04 16:43:01,092 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/MSFT@XNYS/schedule"
+    },
+    {
+      "timestamp": "2025-10-04T19:43:03.583439",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:43:03,583 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:43:07.738397",
+      "method": "GET",
+      "url": "/v1/assets/MSFT@XNGS/schedule",
+      "original_url": "https://api.finam.ru/v1/assets/MSFT@XNGS/schedule",
+      "full_log": "2025-10-04 16:43:07,738 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/MSFT@XNGS/schedule"
+    },
+    {
+      "timestamp": "2025-10-04T19:43:15.118620",
+      "method": "GET",
+      "url": "/v1/instruments/GAZP@MISX/orderbook",
+      "original_url": "https://api.finam.ru/v1/instruments/GAZP@MISX/orderbook",
+      "full_log": "2025-10-04 16:43:15,117 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/GAZP@MISX/orderbook"
+    },
+    {
+      "timestamp": "2025-10-04T19:43:21.499337",
+      "method": "GET",
+      "url": "/v1/instruments/GAZP@MISX/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/GAZP@MISX/bars",
+      "full_log": "2025-10-04 16:43:21,498 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/GAZP@MISX/bars"
+    },
+    {
+      "timestamp": "2025-10-04T19:43:28.302732",
+      "method": "GET",
+      "url": "/v1/instruments/GMKN@MISX/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/GMKN@MISX/bars",
+      "full_log": "2025-10-04 16:43:28,302 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/GMKN@MISX/bars"
+    },
+    {
+      "timestamp": "2025-10-04T19:43:38.843604",
+      "method": "GET",
+      "url": "/v1/accounts/ACC-001-A/orders/ORD010101",
+      "original_url": "https://api.finam.ru/v1/accounts/ACC-001-A/orders/ORD010101",
+      "full_log": "2025-10-04 16:43:38,843 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/ACC-001-A/orders/ORD010101"
+    },
+    {
+      "timestamp": "2025-10-04T19:43:41.836699",
+      "method": "GET",
+      "url": "/v1/accounts/ACC-001-A/orders",
+      "original_url": "https://api.finam.ru/v1/accounts/ACC-001-A/orders",
+      "full_log": "2025-10-04 16:43:41,836 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/ACC-001-A/orders"
+    },
+    {
+      "timestamp": "2025-10-04T19:43:48.695493",
+      "method": "GET",
+      "url": "/v1/accounts/ACC-001-A",
+      "original_url": "https://api.finam.ru/v1/accounts/ACC-001-A",
+      "full_log": "2025-10-04 16:43:48,695 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/ACC-001-A"
+    },
+    {
+      "timestamp": "2025-10-04T19:43:56.638868",
+      "method": "GET",
+      "url": "/v1/assets/YNDX@MISX/params",
+      "original_url": "https://api.finam.ru/v1/assets/YNDX@MISX/params",
+      "full_log": "2025-10-04 16:43:56,638 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/YNDX@MISX/params"
+    },
+    {
+      "timestamp": "2025-10-04T19:43:59.358575",
+      "method": "GET",
+      "url": "/v1/assets/YNDX@MISX/params",
+      "original_url": "https://api.finam.ru/v1/assets/YNDX@MISX/params",
+      "full_log": "2025-10-04 16:43:59,358 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/YNDX@MISX/params"
+    },
+    {
+      "timestamp": "2025-10-04T19:44:02.325383",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:44:02,325 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:44:10.540554",
+      "method": "GET",
+      "url": "/v1/accounts/ACC-001-A",
+      "original_url": "https://api.finam.ru/v1/accounts/ACC-001-A",
+      "full_log": "2025-10-04 16:44:10,540 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/ACC-001-A"
+    },
+    {
+      "timestamp": "2025-10-04T19:44:39.283641",
+      "method": "GET",
+      "url": "/v1/exchanges",
+      "original_url": "https://api.finam.ru/v1/exchanges",
+      "full_log": "2025-10-04 16:44:39,283 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/exchanges"
+    },
+    {
+      "timestamp": "2025-10-04T19:44:41.789897",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:44:41,789 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:44:45.124092",
+      "method": "GET",
+      "url": "/v1/assets/AFLT@MISX/schedule",
+      "original_url": "https://api.finam.ru/v1/assets/AFLT@MISX/schedule",
+      "full_log": "2025-10-04 16:44:45,123 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/AFLT@MISX/schedule"
+    },
+    {
+      "timestamp": "2025-10-04T19:44:53.222951",
+      "method": "GET",
+      "url": "/v1/accounts/FIN-203-B/transactions",
+      "original_url": "https://api.finam.ru/v1/accounts/FIN-203-B/transactions",
+      "full_log": "2025-10-04 16:44:53,222 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/FIN-203-B/transactions"
+    },
+    {
+      "timestamp": "2025-10-04T19:44:56.221089",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 16:44:56,220 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T19:44:59.515470",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979",
+      "full_log": "2025-10-04 16:44:59,515 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979"
+    },
+    {
+      "timestamp": "2025-10-04T19:45:03.807745",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/transactions",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/transactions",
+      "full_log": "2025-10-04 16:45:03,807 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/transactions"
+    },
+    {
+      "timestamp": "2025-10-04T19:45:10.126215",
+      "method": "GET",
+      "url": "/v1/accounts/FORTS",
+      "original_url": "https://api.finam.ru/v1/accounts/FORTS",
+      "full_log": "2025-10-04 16:45:10,125 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/FORTS ACC-001-A"
+    },
+    {
+      "timestamp": "2025-10-04T19:45:13.288545",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 16:45:13,288 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T19:45:26.604783",
+      "method": "GET",
+      "url": "/v1/assets/SBER@MISX/",
+      "original_url": "https://api.finam.ru/v1/assets/SBER@MISX/",
+      "full_log": "2025-10-04 16:45:26,603 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/SBER@MISX/"
+    },
+    {
+      "timestamp": "2025-10-04T19:45:37.631884",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:45:37,631 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:45:41.331867",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979",
+      "full_log": "2025-10-04 16:45:41,331 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979"
+    },
+    {
+      "timestamp": "2025-10-04T19:45:46.986337",
+      "method": "GET",
+      "url": "/v1/instruments/MGNT@MISX/trades/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/MGNT@MISX/trades/latest",
+      "full_log": "2025-10-04 16:45:46,985 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/MGNT@MISX/trades/latest"
+    },
+    {
+      "timestamp": "2025-10-04T19:46:05.770253",
+      "method": "GET",
+      "url": "/v1/instruments/VTBR@MISX/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/VTBR@MISX/bars",
+      "full_log": "2025-10-04 16:46:05,769 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/VTBR@MISX/bars"
+    },
+    {
+      "timestamp": "2025-10-04T19:46:23.627325",
+      "method": "GET",
+      "url": "/v1/instruments/GMKN@MISX/trades/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/GMKN@MISX/trades/latest",
+      "full_log": "2025-10-04 16:46:23,627 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/GMKN@MISX/trades/latest"
+    },
+    {
+      "timestamp": "2025-10-04T19:47:07.915455",
+      "method": "GET",
+      "url": "/v1/instruments/MGNT@MIC/quotes/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/MGNT@MIC/quotes/latest",
+      "full_log": "2025-10-04 16:47:07,915 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/MGNT@MIC/quotes/latest"
+    },
+    {
+      "timestamp": "2025-10-04T19:47:10.863170",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:47:10,862 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:47:15.136928",
+      "method": "GET",
+      "url": "/v1/instruments/MGNT@MISX/quotes/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/MGNT@MISX/quotes/latest",
+      "full_log": "2025-10-04 16:47:15,136 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/MGNT@MISX/quotes/latest"
+    },
+    {
+      "timestamp": "2025-10-04T19:47:15.551299",
+      "method": "GET",
+      "url": "/v1/instruments/MGNT@MISX/trades/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/MGNT@MISX/trades/latest",
+      "full_log": "2025-10-04 16:47:15,550 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/MGNT@MISX/trades/latest"
+    },
+    {
+      "timestamp": "2025-10-04T19:47:28.901950",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:47:28,901 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:47:38.211801",
+      "method": "GET",
+      "url": "/v1/accounts/USR-305-C",
+      "original_url": "https://api.finam.ru/v1/accounts/USR-305-C",
+      "full_log": "2025-10-04 16:47:38,211 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/USR-305-C"
+    },
+    {
+      "timestamp": "2025-10-04T19:47:43.625984",
+      "method": "GET",
+      "url": "/v1/accounts/USR-305",
+      "original_url": "https://api.finam.ru/v1/accounts/USR-305",
+      "full_log": "2025-10-04 16:47:43,625 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/USR-305"
+    },
+    {
+      "timestamp": "2025-10-04T19:47:46.969685",
+      "method": "GET",
+      "url": "/v1/accounts/305",
+      "original_url": "https://api.finam.ru/v1/accounts/305",
+      "full_log": "2025-10-04 16:47:46,969 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/305"
+    },
+    {
+      "timestamp": "2025-10-04T19:47:51.212401",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 16:47:51,212 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T19:47:56.614369",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979",
+      "full_log": "2025-10-04 16:47:56,613 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979"
+    },
+    {
+      "timestamp": "2025-10-04T19:48:04.410673",
+      "method": "GET",
+      "url": "/v1/assets/CRM5@RTSX/params",
+      "original_url": "https://api.finam.ru/v1/assets/CRM5@RTSX/params",
+      "full_log": "2025-10-04 16:48:04,410 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/CRM5@RTSX/params"
+    },
+    {
+      "timestamp": "2025-10-04T19:48:09.460143",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:48:09,459 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:48:21.875702",
+      "method": "GET",
+      "url": "/v1/assets/MGNT@MISX/params",
+      "original_url": "https://api.finam.ru/v1/assets/MGNT@MISX/params",
+      "full_log": "2025-10-04 16:48:21,874 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/MGNT@MISX/params"
+    },
+    {
+      "timestamp": "2025-10-04T19:48:30.760253",
+      "method": "GET",
+      "url": "/v1/accounts/USR-305-C/orders",
+      "original_url": "https://api.finam.ru/v1/accounts/USR-305-C/orders",
+      "full_log": "2025-10-04 16:48:30,760 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/USR-305-C/orders"
+    },
+    {
+      "timestamp": "2025-10-04T19:48:36.914922",
+      "method": "GET",
+      "url": "/v1/accounts/305/orders",
+      "original_url": "https://api.finam.ru/v1/accounts/305/orders",
+      "full_log": "2025-10-04 16:48:36,914 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/305/orders"
+    },
+    {
+      "timestamp": "2025-10-04T19:48:45.835501",
+      "method": "GET",
+      "url": "/v1/accounts/FIN-203-B",
+      "original_url": "https://api.finam.ru/v1/accounts/FIN-203-B",
+      "full_log": "2025-10-04 16:48:45,835 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/FIN-203-B"
+    },
+    {
+      "timestamp": "2025-10-04T19:48:56.689672",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:48:56,689 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:49:01.096375",
+      "method": "GET",
+      "url": "/v1/instruments/PHOR@MISX/quotes/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/PHOR@MISX/quotes/latest",
+      "full_log": "2025-10-04 16:49:01,096 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/PHOR@MISX/quotes/latest"
+    },
+    {
+      "timestamp": "2025-10-04T19:49:09.406109",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:49:09,405 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:49:17.714269",
+      "method": "GET",
+      "url": "/v1/instruments/SBER@MISX/trades/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/SBER@MISX/trades/latest",
+      "full_log": "2025-10-04 16:49:17,713 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/SBER@MISX/trades/latest"
+    },
+    {
+      "timestamp": "2025-10-04T19:49:51.081385",
+      "method": "GET",
+      "url": "/v1/instruments/VKCO@MOEX/orderbook",
+      "original_url": "https://api.finam.ru/v1/instruments/VKCO@MOEX/orderbook",
+      "full_log": "2025-10-04 16:49:51,080 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/VKCO@MOEX/orderbook"
+    },
+    {
+      "timestamp": "2025-10-04T19:49:53.568813",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:49:53,568 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:50:00.969972",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 16:50:00,969 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T19:50:04.248894",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/transactions",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/transactions",
+      "full_log": "2025-10-04 16:50:04,248 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/transactions"
+    },
+    {
+      "timestamp": "2025-10-04T19:50:09.428355",
+      "method": "GET",
+      "url": "/v1/accounts/FIN-203-B",
+      "original_url": "https://api.finam.ru/v1/accounts/FIN-203-B",
+      "full_log": "2025-10-04 16:50:09,427 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/FIN-203-B"
+    },
+    {
+      "timestamp": "2025-10-04T19:50:12.902583",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 16:50:12,902 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T19:50:16.238152",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979",
+      "full_log": "2025-10-04 16:50:16,237 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979"
+    },
+    {
+      "timestamp": "2025-10-04T19:50:24.498411",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:50:24,497 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:50:30.281713",
+      "method": "GET",
+      "url": "/v1/assets/UPRO@MISX/params",
+      "original_url": "https://api.finam.ru/v1/assets/UPRO@MISX/params",
+      "full_log": "2025-10-04 16:50:30,281 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/UPRO@MISX/params"
+    },
+    {
+      "timestamp": "2025-10-04T19:50:37.287483",
+      "method": "GET",
+      "url": "/v1/instruments/SiU3@MOEX/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/SiU3@MOEX/bars",
+      "full_log": "2025-10-04 16:50:37,286 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/SiU3@MOEX/bars"
+    },
+    {
+      "timestamp": "2025-10-04T19:50:40.605413",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:50:40,601 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:50:49.963898",
+      "method": "GET",
+      "url": "/v1/accounts/ACC-001-A",
+      "original_url": "https://api.finam.ru/v1/accounts/ACC-001-A",
+      "full_log": "2025-10-04 16:50:49,963 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/ACC-001-A"
+    },
+    {
+      "timestamp": "2025-10-04T19:50:53.002384",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 16:50:53,002 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T19:51:01.705863",
+      "method": "GET",
+      "url": "/v1/instruments/RTS@MOEX/trades/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/RTS@MOEX/trades/latest",
+      "full_log": "2025-10-04 16:51:01,705 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/RTS@MOEX/trades/latest"
+    },
+    {
+      "timestamp": "2025-10-04T19:51:04.566446",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:51:04,566 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:51:11.461982",
+      "method": "GET",
+      "url": "/v1/instruments/NORN@MOEX/orderbook",
+      "original_url": "https://api.finam.ru/v1/instruments/NORN@MOEX/orderbook",
+      "full_log": "2025-10-04 16:51:11,461 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/NORN@MOEX/orderbook"
+    },
+    {
+      "timestamp": "2025-10-04T19:51:13.911256",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:51:13,911 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:51:21.611683",
+      "method": "GET",
+      "url": "/v1/assets/RIZ5@FORTS/schedule",
+      "original_url": "https://api.finam.ru/v1/assets/RIZ5@FORTS/schedule",
+      "full_log": "2025-10-04 16:51:21,611 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/RIZ5@FORTS/schedule"
+    },
+    {
+      "timestamp": "2025-10-04T19:51:24.818433",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:51:24,817 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:51:31.617930",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/orders/ORDXYZ123",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/orders/ORDXYZ123",
+      "full_log": "2025-10-04 16:51:31,617 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/orders/ORDXYZ123"
+    },
+    {
+      "timestamp": "2025-10-04T19:51:38.131355",
+      "method": "GET",
+      "url": "/v1/assets/BRZ5@FORTS/params",
+      "original_url": "https://api.finam.ru/v1/assets/BRZ5@FORTS/params",
+      "full_log": "2025-10-04 16:51:38,130 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/BRZ5@FORTS/params"
+    },
+    {
+      "timestamp": "2025-10-04T19:51:40.790224",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:51:40,789 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:51:49.284335",
+      "method": "GET",
+      "url": "/v1/instruments/AAPL@XNGS/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/AAPL@XNGS/bars",
+      "full_log": "2025-10-04 16:51:49,284 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/AAPL@XNGS/bars"
+    },
+    {
+      "timestamp": "2025-10-04T19:52:20.215300",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:52:20,215 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:52:58.438401",
+      "method": "GET",
+      "url": "/v1/assets/SBER/options",
+      "original_url": "https://api.finam.ru/v1/assets/SBER/options",
+      "full_log": "2025-10-04 16:52:58,438 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/SBER/options"
+    },
+    {
+      "timestamp": "2025-10-04T19:53:05.461475",
+      "method": "GET",
+      "url": "/v1/accounts/USR-305-C/transactions",
+      "original_url": "https://api.finam.ru/v1/accounts/USR-305-C/transactions",
+      "full_log": "2025-10-04 16:53:05,461 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/USR-305-C/transactions"
+    },
+    {
+      "timestamp": "2025-10-04T19:53:06.575980",
+      "method": "GET",
+      "url": "/v1/accounts/USR-305-C",
+      "original_url": "https://api.finam.ru/v1/accounts/USR-305-C",
+      "full_log": "2025-10-04 16:53:06,575 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/USR-305-C"
+    },
+    {
+      "timestamp": "2025-10-04T19:53:12.087277",
+      "method": "GET",
+      "url": "/v1/accounts/USR-305-C/orders",
+      "original_url": "https://api.finam.ru/v1/accounts/USR-305-C/orders",
+      "full_log": "2025-10-04 16:53:12,086 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/USR-305-C/orders"
+    },
+    {
+      "timestamp": "2025-10-04T19:53:20.782723",
+      "method": "GET",
+      "url": "/v1/accounts/ACC-001-A/trades",
+      "original_url": "https://api.finam.ru/v1/accounts/ACC-001-A/trades",
+      "full_log": "2025-10-04 16:53:20,781 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/ACC-001-A/trades"
+    },
+    {
+      "timestamp": "2025-10-04T19:53:27.241105",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 16:53:27,240 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T19:53:43.526827",
+      "method": "GET",
+      "url": "/v1/assets/BRZ5@RTSX/",
+      "original_url": "https://api.finam.ru/v1/assets/BRZ5@RTSX/",
+      "full_log": "2025-10-04 16:53:43,525 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/BRZ5@RTSX/"
+    },
+    {
+      "timestamp": "2025-10-04T19:53:55.285560",
+      "method": "GET",
+      "url": "/v1/instruments/GAZP@MOEX/orderbook",
+      "original_url": "https://api.finam.ru/v1/instruments/GAZP@MOEX/orderbook",
+      "full_log": "2025-10-04 16:53:55,285 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/GAZP@MOEX/orderbook"
+    },
+    {
+      "timestamp": "2025-10-04T19:53:57.946077",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:53:57,944 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:54:01.934443",
+      "method": "GET",
+      "url": "/v1/instruments/GAZP@MISX/orderbook",
+      "original_url": "https://api.finam.ru/v1/instruments/GAZP@MISX/orderbook",
+      "full_log": "2025-10-04 16:54:01,934 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/GAZP@MISX/orderbook"
+    },
+    {
+      "timestamp": "2025-10-04T19:54:08.045237",
+      "method": "GET",
+      "url": "/v1/accounts/USR-305-C/orders",
+      "original_url": "https://api.finam.ru/v1/accounts/USR-305-C/orders",
+      "full_log": "2025-10-04 16:54:08,044 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/USR-305-C/orders"
+    },
+    {
+      "timestamp": "2025-10-04T19:54:13.948020",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:54:13,947 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:54:20.012813",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:54:20,012 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:54:26.630157",
+      "method": "GET",
+      "url": "/v1/instruments/USDRUB_TOM@MOEX/quotes/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/USDRUB_TOM@MOEX/quotes/latest",
+      "full_log": "2025-10-04 16:54:26,629 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/USDRUB_TOM@MOEX/quotes/latest"
+    },
+    {
+      "timestamp": "2025-10-04T19:54:29.235992",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:54:29,235 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:54:32.854875",
+      "method": "GET",
+      "url": "/v1/instruments/USD000UTSTOM@MISX/quotes/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/USD000UTSTOM@MISX/quotes/latest",
+      "full_log": "2025-10-04 16:54:32,854 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/USD000UTSTOM@MISX/quotes/latest"
+    },
+    {
+      "timestamp": "2025-10-04T19:54:40.973149",
+      "method": "GET",
+      "url": "/v1/accounts/USR-305-C/transactions",
+      "original_url": "https://api.finam.ru/v1/accounts/USR-305-C/transactions",
+      "full_log": "2025-10-04 16:54:40,972 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/USR-305-C/transactions"
+    },
+    {
+      "timestamp": "2025-10-04T19:54:46.849359",
+      "method": "GET",
+      "url": "/v1/accounts/ACC-001-A",
+      "original_url": "https://api.finam.ru/v1/accounts/ACC-001-A",
+      "full_log": "2025-10-04 16:54:46,848 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/ACC-001-A"
+    },
+    {
+      "timestamp": "2025-10-04T19:55:26.063731",
+      "method": "GET",
+      "url": "/v1/accounts/USR-305-C",
+      "original_url": "https://api.finam.ru/v1/accounts/USR-305-C",
+      "full_log": "2025-10-04 16:55:26,063 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/USR-305-C"
+    },
+    {
+      "timestamp": "2025-10-04T19:55:32.180176",
+      "method": "GET",
+      "url": "/v1/accounts/USR-305-C/transactions",
+      "original_url": "https://api.finam.ru/v1/accounts/USR-305-C/transactions",
+      "full_log": "2025-10-04 16:55:32,179 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/USR-305-C/transactions"
+    },
+    {
+      "timestamp": "2025-10-04T19:55:39.179253",
+      "method": "GET",
+      "url": "/v1/accounts/ACC-001-A",
+      "original_url": "https://api.finam.ru/v1/accounts/ACC-001-A",
+      "full_log": "2025-10-04 16:55:39,178 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/ACC-001-A"
+    },
+    {
+      "timestamp": "2025-10-04T19:55:45.415319",
+      "method": "GET",
+      "url": "/v1/exchanges",
+      "original_url": "https://api.finam.ru/v1/exchanges",
+      "full_log": "2025-10-04 16:55:45,414 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/exchanges"
+    },
+    {
+      "timestamp": "2025-10-04T19:55:58.769000",
+      "method": "GET",
+      "url": "/v1/assets/PDM5@RTSX/params",
+      "original_url": "https://api.finam.ru/v1/assets/PDM5@RTSX/params",
+      "full_log": "2025-10-04 16:55:58,768 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/PDM5@RTSX/params"
+    },
+    {
+      "timestamp": "2025-10-04T19:56:01.924975",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 16:56:01,924 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T19:56:05.042457",
+      "method": "GET",
+      "url": "/v1/assets/PDM5@RTSX/params",
+      "original_url": "https://api.finam.ru/v1/assets/PDM5@RTSX/params",
+      "full_log": "2025-10-04 16:56:05,041 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/PDM5@RTSX/params"
+    },
+    {
+      "timestamp": "2025-10-04T19:56:11.156447",
+      "method": "GET",
+      "url": "/v1/instruments/SBER@MISX/orderbook",
+      "original_url": "https://api.finam.ru/v1/instruments/SBER@MISX/orderbook",
+      "full_log": "2025-10-04 16:56:11,156 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/SBER@MISX/orderbook"
+    },
+    {
+      "timestamp": "2025-10-04T19:56:17.879884",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 16:56:17,879 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T19:56:23.833793",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:56:23,833 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:56:27.912814",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:56:27,912 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:56:37.462609",
+      "method": "GET",
+      "url": "/v1/assets/SiZ5@RTSX/",
+      "original_url": "https://api.finam.ru/v1/assets/SiZ5@RTSX/",
+      "full_log": "2025-10-04 16:56:37,462 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/SiZ5@RTSX/"
+    },
+    {
+      "timestamp": "2025-10-04T19:56:40.393204",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 16:56:40,391 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T19:56:47.176181",
+      "method": "GET",
+      "url": "/v1/assets/SiZ5@RTSX/",
+      "original_url": "https://api.finam.ru/v1/assets/SiZ5@RTSX/",
+      "full_log": "2025-10-04 16:56:47,175 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/SiZ5@RTSX/"
+    },
+    {
+      "timestamp": "2025-10-04T19:56:57.746405",
+      "method": "GET",
+      "url": "/v1/accounts/ACC-001-A/transactions",
+      "original_url": "https://api.finam.ru/v1/accounts/ACC-001-A/transactions",
+      "full_log": "2025-10-04 16:56:57,746 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/ACC-001-A/transactions"
+    },
+    {
+      "timestamp": "2025-10-04T19:57:08.200971",
+      "method": "GET",
+      "url": "/v1/instruments/TSLA/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/TSLA/bars",
+      "full_log": "2025-10-04 16:57:08,200 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/TSLA/bars"
+    },
+    {
+      "timestamp": "2025-10-04T19:57:11.436664",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:57:11,436 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:57:15.397446",
+      "method": "GET",
+      "url": "/v1/instruments/TSLA@XNGS/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/TSLA@XNGS/bars",
+      "full_log": "2025-10-04 16:57:15,396 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/TSLA@XNGS/bars"
+    },
+    {
+      "timestamp": "2025-10-04T19:57:55.758483",
+      "method": "GET",
+      "url": "/v1/accounts/SBER@MISX/transactions",
+      "original_url": "https://api.finam.ru/v1/accounts/SBER@MISX/transactions",
+      "full_log": "2025-10-04 16:57:55,757 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/SBER@MISX/transactions"
+    },
+    {
+      "timestamp": "2025-10-04T19:58:00.076356",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 16:58:00,075 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T19:58:03.626139",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/transactions",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/transactions",
+      "full_log": "2025-10-04 16:58:03,625 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/transactions"
+    },
+    {
+      "timestamp": "2025-10-04T19:58:09.217584",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/orders",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/orders",
+      "full_log": "2025-10-04 16:58:09,217 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/orders"
+    },
+    {
+      "timestamp": "2025-10-04T19:58:35.817098",
+      "method": "GET",
+      "url": "/v1/accounts/ACC-001-A",
+      "original_url": "https://api.finam.ru/v1/accounts/ACC-001-A",
+      "full_log": "2025-10-04 16:58:35,816 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/ACC-001-A"
+    },
+    {
+      "timestamp": "2025-10-04T19:58:51.223186",
+      "method": "GET",
+      "url": "/v1/assets/AMZN@NASDAQ/schedule",
+      "original_url": "https://api.finam.ru/v1/assets/AMZN@NASDAQ/schedule",
+      "full_log": "2025-10-04 16:58:51,222 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/AMZN@NASDAQ/schedule"
+    },
+    {
+      "timestamp": "2025-10-04T19:58:57.617015",
+      "method": "GET",
+      "url": "/v1/assets/clock",
+      "original_url": "https://api.finam.ru/v1/assets/clock",
+      "full_log": "2025-10-04 16:58:57,616 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/clock"
+    },
+    {
+      "timestamp": "2025-10-04T19:59:07.496758",
+      "method": "GET",
+      "url": "/v1/assets/EuZ5@RTSX/schedule",
+      "original_url": "https://api.finam.ru/v1/assets/EuZ5@RTSX/schedule",
+      "full_log": "2025-10-04 16:59:07,496 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/EuZ5@RTSX/schedule"
+    },
+    {
+      "timestamp": "2025-10-04T19:59:14.070130",
+      "method": "GET",
+      "url": "/v1/instruments/AAPL@XNGS/trades/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/AAPL@XNGS/trades/latest",
+      "full_log": "2025-10-04 16:59:14,069 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/AAPL@XNGS/trades/latest"
+    },
+    {
+      "timestamp": "2025-10-04T19:59:24.865069",
+      "method": "GET",
+      "url": "/v1/instruments/PLZL@MISX/orderbook",
+      "original_url": "https://api.finam.ru/v1/instruments/PLZL@MISX/orderbook",
+      "full_log": "2025-10-04 16:59:24,864 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/PLZL@MISX/orderbook"
+    },
+    {
+      "timestamp": "2025-10-04T19:59:30.715020",
+      "method": "GET",
+      "url": "/v1/accounts/USR-305-C",
+      "original_url": "https://api.finam.ru/v1/accounts/USR-305-C",
+      "full_log": "2025-10-04 16:59:30,714 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/USR-305-C"
+    },
+    {
+      "timestamp": "2025-10-04T19:59:38.105928",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 16:59:38,105 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T19:59:42.098814",
+      "method": "GET",
+      "url": "/v1/assets/MGNT@MISX/",
+      "original_url": "https://api.finam.ru/v1/assets/MGNT@MISX/",
+      "full_log": "2025-10-04 16:59:42,098 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/MGNT@MISX/"
+    },
+    {
+      "timestamp": "2025-10-04T20:00:12.627817",
+      "method": "GET",
+      "url": "/v1/accounts/FIN-203-B",
+      "original_url": "https://api.finam.ru/v1/accounts/FIN-203-B",
+      "full_log": "2025-10-04 17:00:12,627 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/FIN-203-B"
+    },
+    {
+      "timestamp": "2025-10-04T20:00:18.493956",
+      "method": "GET",
+      "url": "/v1/accounts/ACC-001-A",
+      "original_url": "https://api.finam.ru/v1/accounts/ACC-001-A",
+      "full_log": "2025-10-04 17:00:18,493 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/ACC-001-A"
+    },
+    {
+      "timestamp": "2025-10-04T20:00:27.804625",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:00:27,804 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:00:31.265816",
+      "method": "GET",
+      "url": "/v1/instruments/OZON@MISX/trades/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/OZON@MISX/trades/latest",
+      "full_log": "2025-10-04 17:00:31,265 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/OZON@MISX/trades/latest"
+    },
+    {
+      "timestamp": "2025-10-04T20:00:52.841597",
+      "method": "GET",
+      "url": "/v1/accounts/ACC-001-A",
+      "original_url": "https://api.finam.ru/v1/accounts/ACC-001-A",
+      "full_log": "2025-10-04 17:00:52,841 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/ACC-001-A"
+    },
+    {
+      "timestamp": "2025-10-04T20:01:03.680041",
+      "method": "GET",
+      "url": "/v1/instruments/RIZ5@RTSX/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/RIZ5@RTSX/bars",
+      "full_log": "2025-10-04 17:01:03,679 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/RIZ5@RTSX/bars"
+    },
+    {
+      "timestamp": "2025-10-04T20:01:04.664009",
+      "method": "GET",
+      "url": "/v1/instruments/RIZ5@RTSX/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/RIZ5@RTSX/bars",
+      "full_log": "2025-10-04 17:01:04,663 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/RIZ5@RTSX/bars"
+    },
+    {
+      "timestamp": "2025-10-04T20:01:32.593788",
+      "method": "GET",
+      "url": "/v1/accounts/ACC-001-A/transactions",
+      "original_url": "https://api.finam.ru/v1/accounts/ACC-001-A/transactions",
+      "full_log": "2025-10-04 17:01:32,592 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/ACC-001-A/transactions"
+    },
+    {
+      "timestamp": "2025-10-04T20:01:40.480417",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:01:40,480 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:01:45.964023",
+      "method": "GET",
+      "url": "/v1/instruments/SBERP@MISX/trades/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/SBERP@MISX/trades/latest",
+      "full_log": "2025-10-04 17:01:45,963 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/SBERP@MISX/trades/latest"
+    },
+    {
+      "timestamp": "2025-10-04T20:01:45.971306",
+      "method": "GET",
+      "url": "/v1/instruments/SBER@MISX/trades/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/SBER@MISX/trades/latest",
+      "full_log": "2025-10-04 17:01:45,971 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/SBER@MISX/trades/latest"
+    },
+    {
+      "timestamp": "2025-10-04T20:02:33.503370",
+      "method": "GET",
+      "url": "/v1/accounts/account_id/orders",
+      "original_url": "https://api.finam.ru/v1/accounts/account_id/orders",
+      "full_log": "2025-10-04 17:02:33,503 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/account_id/orders"
+    },
+    {
+      "timestamp": "2025-10-04T20:02:36.885809",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 17:02:36,885 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T20:02:40.285083",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/orders",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/orders",
+      "full_log": "2025-10-04 17:02:40,284 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/orders"
+    },
+    {
+      "timestamp": "2025-10-04T20:02:57.562776",
+      "method": "GET",
+      "url": "/v1/accounts/USR-305-C",
+      "original_url": "https://api.finam.ru/v1/accounts/USR-305-C",
+      "full_log": "2025-10-04 17:02:57,562 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/USR-305-C"
+    },
+    {
+      "timestamp": "2025-10-04T20:03:00.556659",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 17:03:00,555 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T20:03:04.399389",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979",
+      "full_log": "2025-10-04 17:03:04,398 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979"
+    },
+    {
+      "timestamp": "2025-10-04T20:03:13.849051",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/orders/ORD202309",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/orders/ORD202309",
+      "full_log": "2025-10-04 17:03:13,848 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/orders/ORD202309"
+    },
+    {
+      "timestamp": "2025-10-04T20:03:20.281738",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/orders/ORD333111",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/orders/ORD333111",
+      "full_log": "2025-10-04 17:03:20,281 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/orders/ORD333111"
+    },
+    {
+      "timestamp": "2025-10-04T20:03:26.839265",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:03:26,838 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:03:32.356943",
+      "method": "GET",
+      "url": "/v1/assets/NVTK@MISX/params",
+      "original_url": "https://api.finam.ru/v1/assets/NVTK@MISX/params",
+      "full_log": "2025-10-04 17:03:32,356 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/NVTK@MISX/params"
+    },
+    {
+      "timestamp": "2025-10-04T20:03:40.877384",
+      "method": "GET",
+      "url": "/v1/instruments/LKOH@MISX/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/LKOH@MISX/bars",
+      "full_log": "2025-10-04 17:03:40,877 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/LKOH@MISX/bars"
+    },
+    {
+      "timestamp": "2025-10-04T20:03:47.642564",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:03:47,642 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:04:02.191723",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:04:02,191 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:04:05.688744",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:04:05,688 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:04:09.327018",
+      "method": "GET",
+      "url": "/v1/instruments/VTBR@MISX/orderbook",
+      "original_url": "https://api.finam.ru/v1/instruments/VTBR@MISX/orderbook",
+      "full_log": "2025-10-04 17:04:09,326 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/VTBR@MISX/orderbook"
+    },
+    {
+      "timestamp": "2025-10-04T20:04:17.028242",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:04:17,028 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:04:23.588876",
+      "method": "GET",
+      "url": "/v1/assets/NLMK@MISX/params",
+      "original_url": "https://api.finam.ru/v1/assets/NLMK@MISX/params",
+      "full_log": "2025-10-04 17:04:23,588 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/NLMK@MISX/params"
+    },
+    {
+      "timestamp": "2025-10-04T20:04:30.499145",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:04:30,498 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:04:34.727524",
+      "method": "GET",
+      "url": "/v1/instruments/GAZP@MISX/trades/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/GAZP@MISX/trades/latest",
+      "full_log": "2025-10-04 17:04:34,727 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/GAZP@MISX/trades/latest"
+    },
+    {
+      "timestamp": "2025-10-04T20:04:49.151739",
+      "method": "GET",
+      "url": "/v1/accounts/USR-305-C",
+      "original_url": "https://api.finam.ru/v1/accounts/USR-305-C",
+      "full_log": "2025-10-04 17:04:49,151 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/USR-305-C"
+    },
+    {
+      "timestamp": "2025-10-04T20:04:54.291261",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 17:04:54,290 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T20:05:04.439061",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979",
+      "full_log": "2025-10-04 17:05:04,438 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979"
+    },
+    {
+      "timestamp": "2025-10-04T20:05:14.797916",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/trades",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/trades",
+      "full_log": "2025-10-04 17:05:14,797 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/trades"
+    },
+    {
+      "timestamp": "2025-10-04T20:05:28.484266",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/trades",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/trades",
+      "full_log": "2025-10-04 17:05:28,483 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/trades"
+    },
+    {
+      "timestamp": "2025-10-04T20:05:58.572662",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:05:58,572 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:06:01.653329",
+      "method": "GET",
+      "url": "/v1/instruments/LKOH@MISX/trades/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/LKOH@MISX/trades/latest",
+      "full_log": "2025-10-04 17:06:01,652 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/LKOH@MISX/trades/latest"
+    },
+    {
+      "timestamp": "2025-10-04T20:06:17.331179",
+      "method": "GET",
+      "url": "/v1/assets/clock",
+      "original_url": "https://api.finam.ru/v1/assets/clock",
+      "full_log": "2025-10-04 17:06:17,330 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/clock"
+    },
+    {
+      "timestamp": "2025-10-04T20:06:29.268001",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:06:29,267 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:06:34.417907",
+      "method": "GET",
+      "url": "/v1/instruments/AFLT@MISX/orderbook",
+      "original_url": "https://api.finam.ru/v1/instruments/AFLT@MISX/orderbook",
+      "full_log": "2025-10-04 17:06:34,417 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/AFLT@MISX/orderbook"
+    },
+    {
+      "timestamp": "2025-10-04T20:06:41.750475",
+      "method": "GET",
+      "url": "/v1/instruments/RIZ5@RTSX/trades/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/RIZ5@RTSX/trades/latest",
+      "full_log": "2025-10-04 17:06:41,749 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/RIZ5@RTSX/trades/latest"
+    },
+    {
+      "timestamp": "2025-10-04T20:07:30.563468",
+      "method": "GET",
+      "url": "/v1/assets/SiZ5@RTSX/schedule",
+      "original_url": "https://api.finam.ru/v1/assets/SiZ5@RTSX/schedule",
+      "full_log": "2025-10-04 17:07:30,563 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/SiZ5@RTSX/schedule"
+    },
+    {
+      "timestamp": "2025-10-04T20:07:44.555814",
+      "method": "GET",
+      "url": "/v1/assets/AAPL@XNGS/schedule",
+      "original_url": "https://api.finam.ru/v1/assets/AAPL@XNGS/schedule",
+      "full_log": "2025-10-04 17:07:44,555 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/AAPL@XNGS/schedule"
+    },
+    {
+      "timestamp": "2025-10-04T20:07:50.106618",
+      "method": "GET",
+      "url": "/v1/assets/AAPL@XNGS/schedule",
+      "original_url": "https://api.finam.ru/v1/assets/AAPL@XNGS/schedule",
+      "full_log": "2025-10-04 17:07:50,105 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/AAPL@XNGS/schedule"
+    },
+    {
+      "timestamp": "2025-10-04T20:08:03.809443",
+      "method": "GET",
+      "url": "/v1/assets/OZON@MISX/",
+      "original_url": "https://api.finam.ru/v1/assets/OZON@MISX/",
+      "full_log": "2025-10-04 17:08:03,809 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/OZON@MISX/"
+    },
+    {
+      "timestamp": "2025-10-04T20:08:11.992803",
+      "method": "GET",
+      "url": "/v1/accounts//trades",
+      "original_url": "https://api.finam.ru/v1/accounts//trades",
+      "full_log": "2025-10-04 17:08:11,992 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts//trades"
+    },
+    {
+      "timestamp": "2025-10-04T20:08:14.905249",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 17:08:14,904 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T20:08:19.335368",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/trades",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/trades",
+      "full_log": "2025-10-04 17:08:19,334 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/trades"
+    },
+    {
+      "timestamp": "2025-10-04T20:08:33.476048",
+      "method": "GET",
+      "url": "/v1/accounts/FORTS",
+      "original_url": "https://api.finam.ru/v1/accounts/FORTS",
+      "full_log": "2025-10-04 17:08:33,475 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/FORTS USR-305-C"
+    },
+    {
+      "timestamp": "2025-10-04T20:08:36.690469",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 17:08:36,690 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T20:08:43.784131",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:08:43,783 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:08:47.021552",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:08:47,020 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:08:50.615897",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:08:50,615 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:08:58.630530",
+      "method": "GET",
+      "url": "/v1/accounts/FORTS",
+      "original_url": "https://api.finam.ru/v1/accounts/FORTS",
+      "full_log": "2025-10-04 17:08:58,630 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/FORTS USR-305-C/transactions"
+    },
+    {
+      "timestamp": "2025-10-04T20:09:02.049080",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 17:09:02,048 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T20:09:06.182203",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/transactions",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/transactions",
+      "full_log": "2025-10-04 17:09:06,181 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/transactions"
+    },
+    {
+      "timestamp": "2025-10-04T20:09:13.365445",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/orders",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/orders",
+      "full_log": "2025-10-04 17:09:13,365 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/orders"
+    },
+    {
+      "timestamp": "2025-10-04T20:09:22.421498",
+      "method": "GET",
+      "url": "/v1/accounts/FIN-203-B/trades",
+      "original_url": "https://api.finam.ru/v1/accounts/FIN-203-B/trades",
+      "full_log": "2025-10-04 17:09:22,421 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/FIN-203-B/trades"
+    },
+    {
+      "timestamp": "2025-10-04T20:09:29.627472",
+      "method": "GET",
+      "url": "/v1/instruments/ZGZ5@CME/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/ZGZ5@CME/bars",
+      "full_log": "2025-10-04 17:09:29,627 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/ZGZ5@CME/bars"
+    },
+    {
+      "timestamp": "2025-10-04T20:09:32.520403",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:09:32,520 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:10:17.477173",
+      "method": "GET",
+      "url": "/v1/accounts/FIN-203-B/trades",
+      "original_url": "https://api.finam.ru/v1/accounts/FIN-203-B/trades",
+      "full_log": "2025-10-04 17:10:17,476 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/FIN-203-B/trades"
+    },
+    {
+      "timestamp": "2025-10-04T20:10:20.629428",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 17:10:20,629 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T20:10:24.029490",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/trades",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/trades",
+      "full_log": "2025-10-04 17:10:24,029 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/trades"
+    },
+    {
+      "timestamp": "2025-10-04T20:10:32.046088",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/transactions",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/transactions",
+      "full_log": "2025-10-04 17:10:32,045 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/transactions"
+    },
+    {
+      "timestamp": "2025-10-04T20:11:00.634737",
+      "method": "GET",
+      "url": "/v1/assets/VKCO@MISX/params",
+      "original_url": "https://api.finam.ru/v1/assets/VKCO@MISX/params",
+      "full_log": "2025-10-04 17:11:00,634 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/VKCO@MISX/params"
+    },
+    {
+      "timestamp": "2025-10-04T20:11:07.450073",
+      "method": "GET",
+      "url": "/v1/instruments/SBER@MISX/orderbook",
+      "original_url": "https://api.finam.ru/v1/instruments/SBER@MISX/orderbook",
+      "full_log": "2025-10-04 17:11:07,449 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/SBER@MISX/orderbook"
+    },
+    {
+      "timestamp": "2025-10-04T20:11:14.253531",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:11:14,253 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:11:22.124683",
+      "method": "GET",
+      "url": "/v1/instruments/AAPL@NASDAQ/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/AAPL@NASDAQ/bars",
+      "full_log": "2025-10-04 17:11:22,124 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/AAPL@NASDAQ/bars"
+    },
+    {
+      "timestamp": "2025-10-04T20:11:25.097494",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:11:25,096 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:11:29.627863",
+      "method": "GET",
+      "url": "/v1/instruments/AAPL@XNGS/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/AAPL@XNGS/bars",
+      "full_log": "2025-10-04 17:11:29,627 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/AAPL@XNGS/bars"
+    },
+    {
+      "timestamp": "2025-10-04T20:11:37.260454",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/trades",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/trades",
+      "full_log": "2025-10-04 17:11:37,260 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/trades"
+    },
+    {
+      "timestamp": "2025-10-04T20:11:45.055063",
+      "method": "GET",
+      "url": "/v1/assets/CBOM@MISX/",
+      "original_url": "https://api.finam.ru/v1/assets/CBOM@MISX/",
+      "full_log": "2025-10-04 17:11:45,054 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/CBOM@MISX/"
+    },
+    {
+      "timestamp": "2025-10-04T20:11:54.233980",
+      "method": "GET",
+      "url": "/v1/assets/AFLT@MISX/params",
+      "original_url": "https://api.finam.ru/v1/assets/AFLT@MISX/params",
+      "full_log": "2025-10-04 17:11:54,233 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/AFLT@MISX/params"
+    },
+    {
+      "timestamp": "2025-10-04T20:12:01.123709",
+      "method": "GET",
+      "url": "/v1/accounts/ACC-001-A/trades",
+      "original_url": "https://api.finam.ru/v1/accounts/ACC-001-A/trades",
+      "full_log": "2025-10-04 17:12:01,123 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/ACC-001-A/trades"
+    },
+    {
+      "timestamp": "2025-10-04T20:12:04.748225",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 17:12:04,747 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T20:12:11.796807",
+      "method": "GET",
+      "url": "/v1/assets/POLY@MISX/params",
+      "original_url": "https://api.finam.ru/v1/assets/POLY@MISX/params",
+      "full_log": "2025-10-04 17:12:11,796 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/POLY@MISX/params"
+    },
+    {
+      "timestamp": "2025-10-04T20:12:18.579207",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/orders/ORD789012",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/orders/ORD789012",
+      "full_log": "2025-10-04 17:12:18,578 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/orders/ORD789012"
+    },
+    {
+      "timestamp": "2025-10-04T20:12:49.722608",
+      "method": "GET",
+      "url": "/v1/instruments/Brent@ICE/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/Brent@ICE/bars",
+      "full_log": "2025-10-04 17:12:49,722 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/Brent@ICE/bars"
+    },
+    {
+      "timestamp": "2025-10-04T20:12:53.306328",
+      "method": "GET",
+      "url": "/v1/instruments/CL@CME/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/CL@CME/bars",
+      "full_log": "2025-10-04 17:12:53,305 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/CL@CME/bars"
+    },
+    {
+      "timestamp": "2025-10-04T20:12:59.454354",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:12:59,454 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:13:03.351177",
+      "method": "GET",
+      "url": "/v1/instruments/LKOH@MISX/orderbook",
+      "original_url": "https://api.finam.ru/v1/instruments/LKOH@MISX/orderbook",
+      "full_log": "2025-10-04 17:13:03,350 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/LKOH@MISX/orderbook"
+    },
+    {
+      "timestamp": "2025-10-04T20:13:13.236855",
+      "method": "GET",
+      "url": "/v1/instruments/RI@CME/orderbook",
+      "original_url": "https://api.finam.ru/v1/instruments/RI@CME/orderbook",
+      "full_log": "2025-10-04 17:13:13,236 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/RI@CME/orderbook"
+    },
+    {
+      "timestamp": "2025-10-04T20:13:16.231598",
+      "method": "GET",
+      "url": "/v1/exchanges",
+      "original_url": "https://api.finam.ru/v1/exchanges",
+      "full_log": "2025-10-04 17:13:16,231 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/exchanges"
+    },
+    {
+      "timestamp": "2025-10-04T20:13:20.209356",
+      "method": "GET",
+      "url": "/v1/instruments/RI@RTSX/orderbook",
+      "original_url": "https://api.finam.ru/v1/instruments/RI@RTSX/orderbook",
+      "full_log": "2025-10-04 17:13:20,209 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/RI@RTSX/orderbook"
+    },
+    {
+      "timestamp": "2025-10-04T20:13:26.824863",
+      "method": "GET",
+      "url": "/v1/accounts/8/orders",
+      "original_url": "https://api.finam.ru/v1/accounts/8/orders",
+      "full_log": "2025-10-04 17:13:26,824 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/8/orders"
+    },
+    {
+      "timestamp": "2025-10-04T20:13:41.306907",
+      "method": "GET",
+      "url": "/v1/accounts/B98765/orders",
+      "original_url": "https://api.finam.ru/v1/accounts/B98765/orders",
+      "full_log": "2025-10-04 17:13:41,306 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/B98765/orders"
+    },
+    {
+      "timestamp": "2025-10-04T20:13:47.194345",
+      "method": "GET",
+      "url": "/v1/assets/clock",
+      "original_url": "https://api.finam.ru/v1/assets/clock",
+      "full_log": "2025-10-04 17:13:47,193 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/clock"
+    },
+    {
+      "timestamp": "2025-10-04T20:13:52.970079",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:13:52,969 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:14:00.197283",
+      "method": "GET",
+      "url": "/v1/assets/PIKK@MISX/params",
+      "original_url": "https://api.finam.ru/v1/assets/PIKK@MISX/params",
+      "full_log": "2025-10-04 17:14:00,196 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/PIKK@MISX/params"
+    },
+    {
+      "timestamp": "2025-10-04T20:14:09.090285",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:14:09,089 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:14:12.686625",
+      "method": "GET",
+      "url": "/v1/assets/MTSS@MISX/params",
+      "original_url": "https://api.finam.ru/v1/assets/MTSS@MISX/params",
+      "full_log": "2025-10-04 17:14:12,685 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/MTSS@MISX/params"
+    },
+    {
+      "timestamp": "2025-10-04T20:14:21.567886",
+      "method": "GET",
+      "url": "/v1/instruments/LKOH@MISX/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/LKOH@MISX/bars",
+      "full_log": "2025-10-04 17:14:21,567 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/LKOH@MISX/bars"
+    },
+    {
+      "timestamp": "2025-10-04T20:14:22.608727",
+      "method": "GET",
+      "url": "/v1/instruments/LKOH@MISX/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/LKOH@MISX/bars",
+      "full_log": "2025-10-04 17:14:22,607 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/LKOH@MISX/bars"
+    },
+    {
+      "timestamp": "2025-10-04T20:14:37.337323",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 17:14:37,336 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T20:14:44.671577",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:14:44,671 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:14:48.412727",
+      "method": "GET",
+      "url": "/v1/assets/NVTK@MISX/params",
+      "original_url": "https://api.finam.ru/v1/assets/NVTK@MISX/params",
+      "full_log": "2025-10-04 17:14:48,412 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/NVTK@MISX/params"
+    },
+    {
+      "timestamp": "2025-10-04T20:14:58.865157",
+      "method": "GET",
+      "url": "/v1/accounts/8/orders",
+      "original_url": "https://api.finam.ru/v1/accounts/8/orders",
+      "full_log": "2025-10-04 17:14:58,864 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/8/orders"
+    },
+    {
+      "timestamp": "2025-10-04T20:15:27.692448",
+      "method": "GET",
+      "url": "/v1/accounts/FIN-203-B/transactions",
+      "original_url": "https://api.finam.ru/v1/accounts/FIN-203-B/transactions",
+      "full_log": "2025-10-04 17:15:27,692 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/FIN-203-B/transactions"
+    },
+    {
+      "timestamp": "2025-10-04T20:15:30.299625",
+      "method": "GET",
+      "url": "/v1/accounts/FIN-203-B",
+      "original_url": "https://api.finam.ru/v1/accounts/FIN-203-B",
+      "full_log": "2025-10-04 17:15:30,299 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/FIN-203-B"
+    },
+    {
+      "timestamp": "2025-10-04T20:15:33.387242",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 17:15:33,386 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T20:15:40.338093",
+      "method": "GET",
+      "url": "/v1/assets/ОФЗ26238@MOEX/schedule",
+      "original_url": "https://api.finam.ru/v1/assets/ОФЗ26238@MOEX/schedule",
+      "full_log": "2025-10-04 17:15:40,337 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/ОФЗ26238@MOEX/schedule"
+    },
+    {
+      "timestamp": "2025-10-04T20:15:42.757415",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:15:42,757 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:15:49.106264",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:15:49,105 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:15:52.966395",
+      "method": "GET",
+      "url": "/v1/instruments/PLZL@MISX/quotes/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/PLZL@MISX/quotes/latest",
+      "full_log": "2025-10-04 17:15:52,965 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/PLZL@MISX/quotes/latest"
+    },
+    {
+      "timestamp": "2025-10-04T20:15:59.356631",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:15:59,356 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:16:03.079597",
+      "method": "GET",
+      "url": "/v1/assets/ROSN@MISX/options",
+      "original_url": "https://api.finam.ru/v1/assets/ROSN@MISX/options",
+      "full_log": "2025-10-04 17:16:03,078 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/ROSN@MISX/options"
+    },
+    {
+      "timestamp": "2025-10-04T20:16:09.641647",
+      "method": "GET",
+      "url": "/v1/assets/GAZP@MISX/params",
+      "original_url": "https://api.finam.ru/v1/assets/GAZP@MISX/params",
+      "full_log": "2025-10-04 17:16:09,641 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/GAZP@MISX/params"
+    },
+    {
+      "timestamp": "2025-10-04T20:16:12.306115",
+      "method": "GET",
+      "url": "/v1/accounts/45678",
+      "original_url": "https://api.finam.ru/v1/accounts/45678",
+      "full_log": "2025-10-04 17:16:12,305 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/45678"
+    },
+    {
+      "timestamp": "2025-10-04T20:16:30.475060",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:16:30,474 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:16:35.024854",
+      "method": "GET",
+      "url": "/v1/assets/VTBR@MISX/params",
+      "original_url": "https://api.finam.ru/v1/assets/VTBR@MISX/params",
+      "full_log": "2025-10-04 17:16:35,024 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/VTBR@MISX/params"
+    },
+    {
+      "timestamp": "2025-10-04T20:16:41.978694",
+      "method": "GET",
+      "url": "/v1/instruments/SBER@MISX/quotes/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/SBER@MISX/quotes/latest",
+      "full_log": "2025-10-04 17:16:41,978 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/SBER@MISX/quotes/latest"
+    },
+    {
+      "timestamp": "2025-10-04T20:16:49.119220",
+      "method": "GET",
+      "url": "/v1/instruments/AAPL@XNGS/orderbook",
+      "original_url": "https://api.finam.ru/v1/instruments/AAPL@XNGS/orderbook",
+      "full_log": "2025-10-04 17:16:49,118 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/AAPL@XNGS/orderbook"
+    },
+    {
+      "timestamp": "2025-10-04T20:17:07.670984",
+      "method": "GET",
+      "url": "/v1/assets/clock",
+      "original_url": "https://api.finam.ru/v1/assets/clock",
+      "full_log": "2025-10-04 17:17:07,670 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/clock"
+    },
+    {
+      "timestamp": "2025-10-04T20:17:13.359753",
+      "method": "GET",
+      "url": "/v1/accounts/FIN-203-B",
+      "original_url": "https://api.finam.ru/v1/accounts/FIN-203-B",
+      "full_log": "2025-10-04 17:17:13,359 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/FIN-203-B"
+    },
+    {
+      "timestamp": "2025-10-04T20:17:19.220486",
+      "method": "GET",
+      "url": "/v1/accounts/C54321/orders",
+      "original_url": "https://api.finam.ru/v1/accounts/C54321/orders",
+      "full_log": "2025-10-04 17:17:19,220 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/C54321/orders"
+    },
+    {
+      "timestamp": "2025-10-04T20:17:22.287144",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 17:17:22,286 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T20:17:28.843496",
+      "method": "GET",
+      "url": "/v1/instruments/ALRS@MISX/trades/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/ALRS@MISX/trades/latest",
+      "full_log": "2025-10-04 17:17:28,843 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/ALRS@MISX/trades/latest"
+    },
+    {
+      "timestamp": "2025-10-04T20:17:50.117826",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:17:50,117 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:18:05.209915",
+      "method": "GET",
+      "url": "/v1/instruments/SBER@MISX/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/SBER@MISX/bars",
+      "full_log": "2025-10-04 17:18:05,209 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/SBER@MISX/bars"
+    },
+    {
+      "timestamp": "2025-10-04T20:19:02.418639",
+      "method": "GET",
+      "url": "/v1/accounts/USR-305-C",
+      "original_url": "https://api.finam.ru/v1/accounts/USR-305-C",
+      "full_log": "2025-10-04 17:19:02,418 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/USR-305-C"
+    },
+    {
+      "timestamp": "2025-10-04T20:19:07.847116",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:19:07,846 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:19:11.514700",
+      "method": "GET",
+      "url": "/v1/assets/LKOH@MISX/params",
+      "original_url": "https://api.finam.ru/v1/assets/LKOH@MISX/params",
+      "full_log": "2025-10-04 17:19:11,511 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/LKOH@MISX/params"
+    },
+    {
+      "timestamp": "2025-10-04T20:19:14.683896",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 17:19:14,683 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T20:19:17.385722",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979",
+      "full_log": "2025-10-04 17:19:17,385 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979"
+    },
+    {
+      "timestamp": "2025-10-04T20:19:20.185181",
+      "method": "GET",
+      "url": "/v1/assets/LKOH@MISX/params",
+      "original_url": "https://api.finam.ru/v1/assets/LKOH@MISX/params",
+      "full_log": "2025-10-04 17:19:20,184 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/LKOH@MISX/params"
+    },
+    {
+      "timestamp": "2025-10-04T20:19:26.136280",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:19:26,135 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:19:29.427757",
+      "method": "GET",
+      "url": "/v1/instruments/ROSN@MISX/trades/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/ROSN@MISX/trades/latest",
+      "full_log": "2025-10-04 17:19:29,427 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/ROSN@MISX/trades/latest"
+    },
+    {
+      "timestamp": "2025-10-04T20:19:59.190891",
+      "method": "GET",
+      "url": "/v1/accounts/USR-305-C/trades",
+      "original_url": "https://api.finam.ru/v1/accounts/USR-305-C/trades",
+      "full_log": "2025-10-04 17:19:59,190 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/USR-305-C/trades"
+    },
+    {
+      "timestamp": "2025-10-04T20:20:07.309259",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:20:07,308 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:20:15.292438",
+      "method": "GET",
+      "url": "/v1/instruments/SI@FORTS/trades/latest",
+      "original_url": "https://api.finam.ru/v1/instruments/SI@FORTS/trades/latest",
+      "full_log": "2025-10-04 17:20:15,292 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/SI@FORTS/trades/latest"
+    },
+    {
+      "timestamp": "2025-10-04T20:20:19.505676",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:20:19,505 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:20:31.709836",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/transactions",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/transactions",
+      "full_log": "2025-10-04 17:20:31,709 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/transactions"
+    },
+    {
+      "timestamp": "2025-10-04T20:20:40.205617",
+      "method": "GET",
+      "url": "/v1/assets/clock",
+      "original_url": "https://api.finam.ru/v1/assets/clock",
+      "full_log": "2025-10-04 17:20:40,205 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/clock"
+    },
+    {
+      "timestamp": "2025-10-04T20:20:44.823395",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/transactions",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/transactions",
+      "full_log": "2025-10-04 17:20:44,823 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/transactions"
+    },
+    {
+      "timestamp": "2025-10-04T20:20:57.522497",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:20:57,522 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:21:01.827008",
+      "method": "GET",
+      "url": "/v1/instruments/MTSS@MISX/orderbook",
+      "original_url": "https://api.finam.ru/v1/instruments/MTSS@MISX/orderbook",
+      "full_log": "2025-10-04 17:21:01,826 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/MTSS@MISX/orderbook"
+    },
+    {
+      "timestamp": "2025-10-04T20:21:10.092978",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:21:10,092 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:21:19.895430",
+      "method": "GET",
+      "url": "/v1/accounts/ACC-001-A/trades",
+      "original_url": "https://api.finam.ru/v1/accounts/ACC-001-A/trades",
+      "full_log": "2025-10-04 17:21:19,894 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/ACC-001-A/trades"
+    },
+    {
+      "timestamp": "2025-10-04T20:21:29.575456",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 17:21:29,574 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T20:21:43.129118",
+      "method": "GET",
+      "url": "/v1/instruments/RTS@FORTS/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/RTS@FORTS/bars",
+      "full_log": "2025-10-04 17:21:43,126 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/RTS@FORTS/bars"
+    },
+    {
+      "timestamp": "2025-10-04T20:21:59.405927",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/transactions",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/transactions",
+      "full_log": "2025-10-04 17:21:59,403 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/transactions"
+    },
+    {
+      "timestamp": "2025-10-04T20:22:09.410684",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 17:22:09,410 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T20:22:14.214854",
+      "method": "GET",
+      "url": "/v1/assets/MTSS@MISX/params",
+      "original_url": "https://api.finam.ru/v1/assets/MTSS@MISX/params",
+      "full_log": "2025-10-04 17:22:14,214 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/MTSS@MISX/params"
+    },
+    {
+      "timestamp": "2025-10-04T20:22:19.202909",
+      "method": "GET",
+      "url": "/v1/assets/X5RUB@FORTS/params",
+      "original_url": "https://api.finam.ru/v1/assets/X5RUB@FORTS/params",
+      "full_log": "2025-10-04 17:22:19,202 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/X5RUB@FORTS/params"
+    },
+    {
+      "timestamp": "2025-10-04T20:22:28.997022",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:22:28,996 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:23:00.992191",
+      "method": "GET",
+      "url": "/v1/assets/VTBR@MOEX/schedule",
+      "original_url": "https://api.finam.ru/v1/assets/VTBR@MOEX/schedule",
+      "full_log": "2025-10-04 17:23:00,990 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/VTBR@MOEX/schedule"
+    },
+    {
+      "timestamp": "2025-10-04T20:23:03.593884",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:23:03,593 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    },
+    {
+      "timestamp": "2025-10-04T20:23:07.406911",
+      "method": "GET",
+      "url": "/v1/assets/VTBR@MISX/schedule",
+      "original_url": "https://api.finam.ru/v1/assets/VTBR@MISX/schedule",
+      "full_log": "2025-10-04 17:23:07,406 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets/VTBR@MISX/schedule"
+    },
+    {
+      "timestamp": "2025-10-04T20:23:21.179126",
+      "method": "POST",
+      "url": "/v1/sessions/details",
+      "original_url": "https://api.finam.ru/v1/sessions/details",
+      "full_log": "2025-10-04 17:23:21,178 - INFO - MAKING REQUEST: POST https://api.finam.ru/v1/sessions/details"
+    },
+    {
+      "timestamp": "2025-10-04T20:23:27.819817",
+      "method": "GET",
+      "url": "/v1/instruments/RIZ5@RTSX/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/RIZ5@RTSX/bars",
+      "full_log": "2025-10-04 17:23:27,819 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/RIZ5@RTSX/bars"
+    },
+    {
+      "timestamp": "2025-10-04T20:23:55.392541",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979/orders",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979/orders",
+      "full_log": "2025-10-04 17:23:55,392 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979/orders"
+    },
+    {
+      "timestamp": "2025-10-04T20:24:24.743854",
+      "method": "GET",
+      "url": "/v1/accounts/FIN-203-B",
+      "original_url": "https://api.finam.ru/v1/accounts/FIN-203-B",
+      "full_log": "2025-10-04 17:24:24,743 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/FIN-203-B"
+    },
+    {
+      "timestamp": "2025-10-04T20:24:27.539419",
+      "method": "GET",
+      "url": "/v1/accounts/TRQD05:600979",
+      "original_url": "https://api.finam.ru/v1/accounts/TRQD05:600979",
+      "full_log": "2025-10-04 17:24:27,539 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/accounts/TRQD05:600979"
+    },
+    {
+      "timestamp": "2025-10-04T20:24:35.258974",
+      "method": "GET",
+      "url": "/v1/instruments/SBER@MISX/bars",
+      "original_url": "https://api.finam.ru/v1/instruments/SBER@MISX/bars",
+      "full_log": "2025-10-04 17:24:35,258 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/SBER@MISX/bars"
+    },
+    {
+      "timestamp": "2025-10-04T20:25:01.567187",
+      "method": "GET",
+      "url": "/v1/instruments/MGNT@MISX/orderbook",
+      "original_url": "https://api.finam.ru/v1/instruments/MGNT@MISX/orderbook",
+      "full_log": "2025-10-04 17:25:01,566 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/instruments/MGNT@MISX/orderbook"
+    },
+    {
+      "timestamp": "2025-10-04T20:25:09.538308",
+      "method": "GET",
+      "url": "/v1/assets",
+      "original_url": "https://api.finam.ru/v1/assets",
+      "full_log": "2025-10-04 17:25:09,537 - INFO - MAKING REQUEST: GET https://api.finam.ru/v1/assets"
+    }
+  ]
+}
