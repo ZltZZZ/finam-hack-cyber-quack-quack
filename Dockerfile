@@ -19,6 +19,7 @@ RUN pip install --no-cache-dir poetry==1.8.3 && \
     rm -rf ~/.cache/pypoetry
 
 RUN pip install httpx
+RUN pip install --no-cache-dir httpx plotly pandas 
 
 # Копируем исходный код приложения
 COPY src/app ./src/app
