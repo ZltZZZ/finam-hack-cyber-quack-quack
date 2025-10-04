@@ -42,5 +42,4 @@ urllib3==2.5.0
 uvicorn==0.37.0
 
 
-# Mcp-agent
-mcp-agent
+

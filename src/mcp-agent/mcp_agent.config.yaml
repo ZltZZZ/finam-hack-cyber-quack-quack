@@ -1,0 +1,22 @@
+$schema: ../../../schema/mcp-agent.config.schema.json
+
+execution_engine: asyncio
+# logger:
+#   transports: [console, file]
+#   level: debug
+#   progress_display: true
+#   path_settings:
+#     path_pattern: "logs/mcp-agent-{unique_id}.jsonl"
+#     unique_id: "timestamp" # Options: "timestamp" or "session_id"
+#     timestamp_format: "%Y%m%d_%H%M%S"
+
+mcp:
+  servers:
+    trader_tools:
+      description: "Server with trader tools"
+      transport: streamable_http
+      url: http://mcp-server:8000/mcp
+
+openai:
+  base_url: "https://openrouter.ai/api/v1"
+  default_model: "openai/gpt-4o-mini"

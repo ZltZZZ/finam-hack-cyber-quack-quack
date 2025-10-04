@@ -3,7 +3,7 @@ from typing import Dict, Optional, Union, Any
 import asyncio
 from datetime import datetime, timedelta
 import jwt
-from models import *
+from .models import *
 
 class FinamApiClient:
     """Клиент для работы с API Finam с автоматической аутентификацией."""
@@ -99,6 +99,7 @@ class FinamApiClient:
                     async with httpx.AsyncClient() as client:
                         print(f"🔍 Making request: {method} {url}")
                         print(f"🔍 Headers: { {k: v for k, v in headers.items() if k != 'Authorization'} }")
+                        print(f"Args: {kwargs}")
                         
                         response = await client.request(method, url, **kwargs)
                         
@@ -294,11 +295,13 @@ class FinamApiClient:
     async def place_order(self, account_id: str, request: PlaceOrderRequest) -> Union[PlaceOrderResponse, ErrorResponse]:
         """Выставление биржевой заявки."""
         url = f"{self.base_url}/v1/accounts/{account_id}/orders"
+        print(request.model_dump_json())
         response = await self._make_request("POST", url, json=request.model_dump())
         return self._prepare_response(response, PlaceOrderResponse)
     
     async def cancel_order(self, request: CancelOrderRequest) -> Union[CancelOrderResponse, ErrorResponse]:
         """Отмена биржевой заявки."""
+        print(request.model_dump_json())
         url = f"{self.base_url}/v1/accounts/{request.account_id}/orders/{request.order_id}"
         response = await self._make_request("DELETE", url)
         return self._prepare_response(response, CancelOrderResponse)

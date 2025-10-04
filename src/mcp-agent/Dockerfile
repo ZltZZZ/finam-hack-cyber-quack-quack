@@ -9,4 +9,4 @@ ENV PYTHONUNBUFFERED=1
 
 COPY . .
 
-CMD ["uvicorn", "server:app", "--host", "0.0.0.0", "--port", "8003"]
+CMD ["uvicorn", "agent:app", "--host", "0.0.0.0", "--port", "8003"]

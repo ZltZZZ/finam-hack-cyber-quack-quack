@@ -6,3 +6,4 @@ mcp-agent
 pydantic
 python-dotenv
 python-json-logger
+openai
